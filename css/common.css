@@ -1,0 +1,51 @@
+#wrap {
+
+}
+#header .util_m{
+  height: 170px;
+  width:100%;
+  background: silver;
+}
+#header .util_m {
+  height: 56px;
+  align-items: right;
+}
+#header .util_m ul {
+  width: 800px;
+    height: 40px;
+    float: right;
+}
+#header .util_m li {
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 20px;
+  line-height: 3.5;
+}
+#header .util_m li a{
+  width: 60px;
+  height: 40px;
+  background: url(/project2/images/Capture.png) no-repeat 100%;
+}
+
+
+#header .gnb {
+  display: block;
+  height: 116px;
+  width: 100%;
+  background: #fff;;
+}
+#header .gnb a{
+  width: 93px;
+  height: 100px;
+  background: url(/project2/images/coffeebin_image23.jpg) no-repeat;
+}
+
+#main_content .main_banner {
+  height: 700px;
+  background: url(/project2/images/coffeebin_image3.jpg) no-repeat 100%;
+  display: block;
+}
+#main_content .sub_banner {
+  height: 400px;
+  background: url(/project2/images/coffeebin_image1.jpg) no-repeat 100%;
+}
