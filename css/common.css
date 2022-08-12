@@ -1,44 +1,48 @@
 #wrap {
-
 }
-#header .util_m{
-  height: 170px;
-  width:100%;
+#header .util_m {
+  height: 140px;
+  width: 100%;
   background: silver;
 }
 #header .util_m {
-  height: 56px;
+  height: 40px;
   align-items: right;
 }
 #header .util_m ul {
   width: 800px;
-    height: 40px;
-    float: right;
+  height: 40px;
+  float: right;
 }
 #header .util_m li {
   display: inline-block;
   font-size: 14px;
   margin-right: 20px;
-  line-height: 3.5;
+  line-height: 0;
 }
-#header .util_m li a{
+#header .util_m li img {
   width: 60px;
   height: 40px;
   background: url(/project2/images/Capture.png) no-repeat 100%;
 }
 
+/* ----------gnb----------- */
 
 #header .gnb {
   display: block;
-  height: 116px;
-  width: 100%;
-  background: #fff;;
-}
-#header .gnb a{
-  width: 93px;
   height: 100px;
-  background: url(/project2/images/coffeebin_image23.jpg) no-repeat;
+  width: 100%;
+  background: #fff;
 }
+
+#header.gnb li {
+  display: inline-block;
+  font-size: 14px;
+  margin-right: 20px;
+  line-height: 3.5;
+}
+
+/* ----------banner----------- */
 
 #main_content .main_banner {
   height: 700px;
@@ -48,4 +52,59 @@
 #main_content .sub_banner {
   height: 400px;
   background: url(/project2/images/coffeebin_image1.jpg) no-repeat 100%;
+}
+
+/* ----------content------------ */
+.MD_slider,
+.NEW_sider {
+  background: #eaeaea;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+}
+.main_wrap h2 {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-content: space-between;
+  font-size: 24px;
+  color: rgb(207, 102, 26);
+  margin-bottom: 35px;
+  margin: 10px 10px 10px 10px;
+  font-weight: 500;
+  font-family: "Archer-Semibold", "NanumBarunGothic", sans-serif;
+}
+.MD_slider ul {
+  width:1200px;
+}
+.MD_slider ul li:nth-child(odd) {
+  background-color: #7e62e3;
+  color: #e5e5e5;
+}
+.MD_slider ul li {
+  background-color: #36a772;
+  margin-right: 1.5%;
+}
+
+.MD_slider span {
+  display: block;
+}
+.MD_slider a {
+  background: url(../images/coffeebin_image1.png)
+    no-repeat;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+  margin: auto;
+  margin-top: 40px;
+}
+.txt {
+  font-size: 1em;
+  color: #ffffff;
+  width: 280px;
+  height: 20px;
+  margin: 10px auto 0;
 }

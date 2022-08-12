@@ -1,0 +1,444 @@
+#wrap {
+  height: 4100px;
+  width: 1700px;
+  margin: auto;
+  padding: auto;
+}
+.container {
+  max-width: 1400px;
+  background: rgba(255, 0, 255, 0.4);
+  height: auto;
+  /*   height: inherit; */
+  margin: auto;
+}
+.gnb_search {
+  padding-left: 20px;
+  margin-left: 10px;
+  float: right;
+}
+.gnb_search li {
+  right: 0;
+  display: none;
+}
+.gnb_search li + li {
+  right: 0;
+  display: none;
+}
+.gnb_link {
+  display: inline;
+  float: right;
+  padding: 10px 10px;
+  background: darkblue;
+}
+#header {
+  height: 117px;
+}
+#header-top {
+  height: 70px;
+}
+#header-nav {
+  height: 47px;
+}
+
+#banner {
+  box-sizing: border-box;
+  height: 390px;
+  display: block;
+  background: url(../../ARKO/한국문화예술위원회_files/main_background01.jpg) 100%;
+}
+#banner_pic {
+  line-height: 3;
+  float: right;
+  padding-right: 150px;
+}
+#banner_pic li:last-child {
+  padding-right: 20px;
+}
+#contents {
+  height: 3375px;
+}
+#content1 {
+  height: 610px;
+}
+
+/* content1 */
+
+.item {
+  padding: 10px 10px;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  text-align: center;
+  width: 225px;
+  height: 250px;
+  float: left;
+  left: 15%;
+
+}
+.item > p {
+  text-align: center;
+}
+.s_box {
+  display: inline-block;
+  padding: 0 15px;
+  position: relative;
+  top: -30px;
+  left: -20px;
+  width: 69px;
+  height: 69px;
+  background-color: #383d53;
+}
+.s_box1 {
+  display: inline-block;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  width: 57px;
+  font-size: 16px;
+  border-bottom: 2px solid #009a57;
+  color: #009a57;
+  line-height: 1;
+  text-align: center;
+}
+.s_box2 {
+  display: inline-block;
+}
+.s_box3 {
+  display: block;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 15px;
+  line-height: 5;
+  height: 47px;
+  overflow: hidden;
+}
+.s_box3 p {
+  color: #808080;
+  font-size: 14px;
+  line-height: 1;
+}
+.s_box3 a {
+  font-size: 14px;
+  display: block;
+}
+/* //#content1 */
+
+#content2 {
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 50px 0px;
+  
+  max-width: 1400px;
+  overflow: hidden;
+  position:static;
+}
+#content2:after {
+  content: "";
+  clear: both;
+  display: block;
+} 
+.sub_title {
+  display: block;
+  line-height: 1;
+  font-size: 18px;
+  font-family: "NanumSquare";
+  color: #333;
+  text-align: center;
+}
+.sub_title1 {
+  display: block;
+  line-height: 1;
+  font-size: 44px;
+  font-family: "NanumSquare";
+  color: #333;
+  text-align: center;
+}
+.slider {
+  box-sizing: border-box;
+  display: block;
+  padding: 50px 0;
+  background: #fff;
+  float:none;
+}
+.slider_pre {
+  position: absolute;
+  top: -25px;
+  right: 80px;
+  width: 14px;
+  height: 25px;
+  border: 0;
+  background: url(../../ARKO/한국문화예술위원회_files/left.png) no-repeat;
+  z-index: 1;
+}
+.slider_next {
+  position: absolute;
+  top: -25px;
+  right: 80px;
+  width: 14px;
+  height: 25px;
+  border: 0;
+  background: url(../../ARKO/한국문화예술위원회_files/RIGHT.png) no-repeat;
+}
+.slide_track li {
+  float: left;
+}
+.slider_box {
+  padding: 25px 60px;
+  margin-left: 10px;
+  width: 700px;
+  height: 370px;
+  top: 60px;
+  background-color: #fff;
+  box-shadow: 5px 5px 10px 0 rgb(33 39 63 / 35%);
+  border: 1px solid #e5e5e5;
+  display: block;
+  float: left;
+}
+.slider_box > .title {
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 36px;
+  font-family: "notokrRegular";
+  line-height: 1.4;
+}
+.slider_box > .txt {
+  margin-bottom: 25px;
+  color: #777;
+  font-size: 15px;
+  line-height: 1.4;
+  word-break: keep-all;
+}
+.slider_box > .more {
+  display: inline-block;
+  position: relative;
+  padding: 10px 65px 10px 20px;
+  color: #333;
+  font-size: 14px;
+  border: 1px solid #333;
+}
+.news_img1 {
+  display: block;
+  position: relative;
+  float: right;
+  width: 52.5%px;
+  height: 506px;
+  margin-right: 150px;
+}
+
+.arko_info {
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-width: 1200px;
+  position: static;
+  float: left;
+  margin-left: 15%;
+ 
+}
+.arko_info a {
+  display: block;
+  float: right;
+  width: 360px;
+  height: 118px;
+  opacity: 1;
+}
+
+.info_bn01 {
+  margin: 0 auto;
+  padding-top: 40px;
+  max-width: 1200px;
+  float: right;
+  margin-right: 40px;
+}
+.info_bn01:after {
+  content: " ";
+  clear: both;
+  display: block;
+}
+
+.info_bn01:first-child {
+  background: url("../../ARKO/한국문화예술위원회_files/about_arko.png") right center no-repeat;
+  background-size: auto 100%;
+  margin-top: 30px;
+}
+.info_bn01:nth-child(2) {
+  background: url("../../ARKO/한국문화예술위원회_files/arko_member.png") right center no-repeat;
+  background-size: auto 100%;
+  margin-top: 30px;
+}
+.info_bn01:nth-child(3) {
+  background: url("../../ARKO/한국문화예술위원회_files/arko_org.png") right center no-repeat;
+  background-size: auto 100%;
+  margin-top: 30px;
+}
+.info_bn01:nth-child(4) {
+  background: url("../../ARKO/한국문화예술위원회_files/arko_search.png") right center no-repeat;
+  background-size: auto 100%;
+  margin-top: 30px;
+}
+.info_bn01:nth-child(5) {
+  background: url("../../ARKO/한국문화예술위원회_files/arko_data.png") right center no-repeat;
+  background-size: auto 100%;
+  margin-top: 30px;
+}
+.info_bn01:nth-child(6) {
+  background: url("../../ARKo/한국문화예술위원회_files/arko_contact.png") right center no-repeat;
+  background-size: auto 100%;
+  margin-top: 30px;
+}
+
+#content3 {
+  height: 790px;
+}
+#content4 {
+  height: 1250px;
+
+}
+
+#footer {
+  height: 237px;
+}
+#footer-top {
+  height: 58px;
+}
+#footer-nav {
+  height: 179px;
+}
+
+.gnb {
+  display: inline;
+  height: 5px;
+  width: auto;
+}
+.header-box {
+  list-style: none;
+  text-align: center;
+  height: 53px;
+  width: 272px;
+  display: inline;
+}
+.header-box > li:nth-child(1) {
+  float: left;
+}
+.header-box > li:nth-child(2) {
+  padding: 30px 40px;
+  margin-right: 5px;
+  float: right;
+  text-align: center;
+}
+.header-box > li:nth-child(3) {
+  padding: 30px 20px;
+  float: right;
+  text-align: center;
+}
+
+.header-box > li:nth-child(4) {
+  float: right;
+}
+.header-box2 {
+  list-style: none;
+  height: 53px;
+  width: 272px;
+  margin: 10px;
+  display: inline;
+  line-height: 2;
+  font-size: 20px;
+}
+.header-box2 > li:nth-child(1) {
+  padding: 10px 0px;
+  margin-right: 30px;
+}
+.header-box2 > li:nth-child(2) {
+  padding: 10px 10px;
+  margin-left: 30px;
+}
+.header-box2 > li:nth-child(3) {
+  padding: 10px 10px;
+  margin-left: 30px;
+}
+.header-box2 > li:nth-child(4) {
+  padding: 10px 10px;
+  margin-left: 30px;
+}
+.header-box2 > li:nth-child(5) {
+  padding: 10px 10px;
+  margin-left: 30px;
+}
+.header-box2 > li:nth-child(6) {
+  padding: 10px 10px;
+  margin-left: 30px;
+}
+.header-box2 > li:nth-child(7) {
+  color: darkblue;
+  padding: 10px 10px;
+  margin-left: 30px;
+}
+
+.contentbox1_1 {
+  height: 100%;
+  display: flex;
+  padding: 26px 40px;
+  margin: 0 auto 50px;
+  width: 624px;
+}
+.contentbox1_1 li {
+  font-family: "NanumSquare";
+  display: block;
+  margin: 0;
+  border: 1px solid;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 21px;
+  list-style: none;
+  width: 207px;
+  line-height: 60px;
+  background: rgb(192, 192, 192);
+ 
+}
+.contentbox1_1 li {
+  justify-content: center;
+  list-style: none;
+  width: 207px;
+}
+.contentbox1_1 li + li + li {
+  list-style: none;
+  width: 207px;
+}
+.contentbox1_1 li + li + li + li {
+  list-style: none;
+  width: 50px;
+}
+
+.contentbox2 {
+  list-style: none;
+  text-align: center;
+  height: 53px;
+  width: 272px;
+  margin: 10px;
+  display: inline;
+}
+
+.contentbox3 {
+  list-style: none;
+  text-align: center;
+  height: 53px;
+  width: 272px;
+  margin: 10px;
+  display: inline;
+}
+
+.contentbox4 {
+  box-sizing: border-box;
+  list-style: none;
+  text-align: center;
+  height: 53px;
+  width: 272px;
+  margin: 10px;
+  display: inline;
+}
+.donation_list02-1 > li {
+  background: #e1e1e1;
+  width:152px;
+  height:197px;
+}
+#header-nav:hover {
+  height: 400px;
+}
