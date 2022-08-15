@@ -2,8 +2,13 @@
   width: 1900px;
 }
 #header {
-  width: 100%;
   margin:auto;
+  margin-top: -140px;
+  background: rgb(255,255,255);
+  border-bottom: 1px solid rgb(238,238,238);
+  display: block;
+  z-index: -99999px;
+  position: fixed;
 }
 #header .util_m {
   height: 140px;
@@ -21,28 +26,37 @@
   width: 1200px;
   height: 40px;
 }
+
 #header .util_m li {
   display: inline-block;
   font-size: 14px;
+  word-spacing: 1px;
   margin-right: 20px;
+  margin-bottom: -12px;
 }
 #header .util_m .btn {
   width: 60px;
   height: 40px;
-  background: url(/project2/images/Capture.png) no-repeat 100%;
-  background-size: cover;}
+  background: url(/project2/images/Capture.png) no-repeat 100% center ;
+  background-size: cover;
+  display: block;
+  
+}
+  
 
 /* ----------gnb----------- */
 
 #header .gnb {
-  display: block;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-evenly;
   height: 100px;
   width: 100%;
   margin: auto;
 }
 #header .gnb_box {
   display: inline-block;
-  width: 1200px;
+  width: 1900px;
   margin-left: 15%
 }
 #header .gnb ul {
@@ -51,7 +65,7 @@
 #header .gnb li {
   float: left;
   line-height: 100px;
-  padding: 0px 31px 0px 32px;
+  padding: 0px 60px 0px 32px;
 
 }
 #header .gnb li a {
@@ -61,9 +75,9 @@
   text-align: center;
 }
 #header .gnb .logo {
-  background: url(/project2/images/coffeebin_image23.png) no-repeat center 100%;
+  background: url(/project2/images/coffeebin_image23.png) no-repeat 50%;
   background-size: cover;
-  width: 100px;
+  width: 105px;
   height: 80px;
   margin: 10px 80px 0px 0px;
 }
@@ -78,11 +92,12 @@
 }
 #main_content .main_banner {
   height: 700px;
-  background: url(/project2/images/coffeebin_image3.jpg) no-repeat center 100%;
+  background: url(/project2/images/coffeebin_image3.jpg) no-repeat center 50%;
+  display: block;
 }
 #main_content .sub_banner {
   height: 400px;
-  background: url(/project2/images/coffeebin_image1.jpg) no-repeat center 100%;
+  background: url(/project2/images/coffeebin_image1.jpg) no-repeat center 50%;
 }
 
 /* ----------content------------ */
@@ -118,6 +133,7 @@
 /* -------MD_slider ------- */
 .MD_slider {
   height: 640px;
+  overflow: hidden;
 }
 .MD_slider .slide_box1 {
   width: 1200px;
@@ -160,25 +176,30 @@
 .txt1 {
   display: block;
   max-height: 44px;
-  overflow: hidden;
-  margin-bottom: 15px;
+  word-break: break-all;
+  word-spacing: -5px;
+  letter-spacing: -1px;
+  margin: 15px 0px 10px 0px;
   font-family: "Archer-Semibold", "NanumBarunGothic" sans-serif;
   font-weight: 700;
   font-size: 18px;
   color: rgb(51, 51, 51);
-  background: white;
+}
+.ml {
+  font-size: 16px;
+  font-family: "Archer-Semibold", "NanumBarunGothic" sans-serif;
 }
 .txt2 {
   display: block;
   font-family: "NanumBarunGothic";
   font-size: 14px;
   color: rgb(207, 102, 26);
-  background: wheat;
 }
 
 /* -------NEW_slider ------- */
 .NEW_slider {
   height: 720px;
+  overflow: hidden;
 }
 .NEW_slider .slide_box2 {
   width: 1200px;
@@ -214,12 +235,11 @@
   height: 90px;
   padding: 0 40px;
   text-align: center;
-  background: white;
 }
 .txt3 {
   display: block;
   margin-bottom: 15px;
-  font-family: "Archer-Semibold", "NanumBarunGothic";
+  font-family: "Archer-Semibold", "NanumBarunGothic", sans-serif;
   font-size: 18px;
   color: rgb(207, 102, 26);
   line-height: 18px;
@@ -242,7 +262,6 @@
 .promotion .pro_insta {
   height: 600px;
   width: 900px;
-  background: white;
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
@@ -262,7 +281,7 @@
   width: 200px;
 }
 .promotion li:nth-child(3) {
-  background: url(../images/coffeebin_imag66.jpg) center 100% no-repeat;
+  background: url(../images/coffeebin_image66.jpg) center 100% no-repeat;
   background-size: cover;
   height: 200px;
   width: 200px;
@@ -335,3 +354,69 @@
 }
 
 /* ------- footer ------- */
+#footer {
+  width: 100%;
+  height: 300px;
+  background: silver;
+}
+.inner_footer {
+  position:relative;
+  top: 30%;
+  width: 1200px;
+  margin: auto;
+  padding-top: 18px;
+  border-top: 1px solid  rgb(95,77,63);
+}
+.f_sns {
+  box-sizing: border-box;
+  width: 205px;
+  height: 53px;
+  display: inline-block;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content:space-between;
+  align-content: space-between;
+  margin: auto;
+}
+.f_sns a {
+  width: 40px;
+  height: 40px;
+  background-size: cover;
+  text-indent: -99999px;
+  float:left;
+}
+.f_sns .fb {
+  background: url(/project2/images/coffeebin_image13.png) center 100% no-repeat;
+}
+.f_sns .insta {
+  background: url(/project2/images/coffeebin_image16.png) center 100% no-repeat;
+}
+.f_sns .blog {
+  background: url(/project2/images/coffeebin_image12.png) center 100% no-repeat;
+}
+.f_sns .twit {
+  background: url(/project2/images/coffeebin_image20.png) center 100% no-repeat;
+}
+.f_service a {
+  display: inline-block;
+  font-size: 13px;
+  margin: 0 5px;
+  color: rgb(95,77,63);
+ 
+}
+.f_service .im {
+  color:rgb(243, 130, 0)
+}
+.f_address {
+  box-sizing: border-box;
+  width: 655px;
+  margin-top: 10px;
+  word-break: keep-all;
+}
+.f_address span {
+  font-family: 'NanumBarunGothic';
+  font-size: 13px;
+  color: rgb(95,77,63);
+  line-height: 24px;
+
+}

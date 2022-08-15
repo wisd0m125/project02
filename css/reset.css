@@ -11,6 +11,7 @@ html {
 }
 #wrap {
 	margin: auto;
+  margin-top: 140px;
 }
 div {
   display: block;
