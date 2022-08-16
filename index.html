@@ -6,13 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>coffee bean</title>
     <link rel="stylesheet" href="css/common.css" />
+
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
     
-    <link rel="stylesheet" href="css/reset.css" />
+      <link rel="stylesheet" href="js/swiper.json">
+      <link rel="stylesheet" href="css/reset.css" />
+    <style>
+     .swiper-slide1 {
+       display: -webkit-box;
+       display: -ms-flexbox;
+       display: -webkit-flex;
+       display: flex;
+       -webkit-box-pack: center;
+       -ms-flex-pack: center;
+       -webkit-justify-content: center;
+       justify-content: center;
+       -webkit-box-align: center;
+       -ms-flex-align: center;
+       -webkit-align-items: center;
+       align-items: center;
+      }
+      .swiper {
+         width: 100%;
+         height: 100%;
+      }
+      .swiper-button-next,
+      .swiper-button-prev {
+        position: absolute;
+        top: 40%;
+      }
+      .swiper-button-next {
+        right:-2px;
+      }
+      .swiper-button-prev
+      {
+        left:-2px;
+      }
+      .swiper-slide .imglist1 {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
   </head>
   <body>
     <div id="wrap">
@@ -27,7 +65,7 @@
             <li><a class="btn fr" href="#"></a></li>
           </ul>
         </div>
-        <div class="gnb">
+        <div class="gnb cf">
           <div class="gnb_box">
             <a class="logo fl" href="#"></a>
             <div class="gnb_menu">
@@ -57,61 +95,93 @@
           </a>
         </div>
         <div class="main_wrap cf">
-          <div class="MD_slider">
-            <h2>MD'S PICK</h2>
-            <div class="slide_box1">
-              <div class="slide_box1">
-                <div class="box1_info">
-                  <a href="#">
-                    <p class="pic"></p>
-                    <p class="text_box">
-                      <span class="txt1"
-                        >그립스텐텀블러(소프트퍼플)<span class="ml"
-                          >540ml</span>
-                      <span class="txt2">23,000원</span>
-                    </p>
-                  </a>
-                </div>
-                <div class="box1_info">
-                  <a href="#">
-                    <p class="pic02"></p>
-                    <p class="text_box">
-                      <span class="txt1"
-                        >앵글스텐텀블러<span class="ml">500ml</span>
-                      <span class="txt2">16,000원</span>
-                    </p>
-                  </a>
-                </div>
-                <div class="box1_info">
-                  <a href="#">
-                    <p class="pic03"></p>
-                    <p class="text_box">
-                      <span class="txt1"
-                        >그립 더블월 빅 글라스(오로라)<span class="ml"
-                          >550ml</span>
-                      <span class="txt2">14,000원</span>
-                    </p>
-                  </a>
-                </div>
-                <div class="box1_info">
-                  <a href="#">
-                    <p class="pic04"></p>
-                    <p class="text_box">
-                      <span class="txt1"
-                        >워터드롭 더블 월 글라스(오로라)
+          <h2>MD'S PICK</h2>
+          <div class="swiper mySwiper">
+              <div class="swiper-wrapper slidebox1">
+                  <div class="swiper-slide imglist1">
+                    <a href="#">
+                      <p class="pic"></p>
+                      <p class="text_box">
+                        <span class="txt1">그립스텐텀블러(소프트퍼플)</span><span class="ml">540ml</span>
+                        <span class="txt2">23,000원</span></p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide imglist1">
+                    <a href="#">
+                      <p class="pic02"></p>
+                      <p class="text_box">
+                        <span class="txt1">앵글스텐텀블러</span><span class="ml">500ml</span>
+                        <span class="txt2">16,000원</span></p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide imglist1">
+                    <a href="#">
+                      <p class="pic03"></p>
+                      <p class="text_box">
+                        <span class="txt1">그립 더블월 빅 글라스(오로라)</span><span class="ml">550ml</span>
+                        <span class="txt2">14,000원</span>
+                      </p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide imglist1">
+                    <a href="#">
+                      <p class="pic04"></p>
+                      <p class="text_box">
+                        <span class="txt1">워터드롭 더블 월 글라스(오로라)</span>
                         <span class="ml">470ml</span>
-                      <span class="txt2">11,000원</span>
-                    </p>
-                  </a>
-                </div>
-              </div>
+                        <span class="txt2">11,000원</span>
+                      </p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide imglist1">
+                    <a href="#">
+                      <p class="pic05"></p>
+                      <p class="text_box">
+                        <span class="txt1">커피빈x나인웨어 피크닉세트</span><span class="ml">(2인)</span>
+                        <span class="txt2">35,000원</span>
+                      </p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide imglist1">
+                    <a href="#">
+                      <p class="pic06"></p>
+                      <p class="text_box">
+                        <span class="txt1">웨이브글라스머그(오로라)</span><span class="ml">450ml</span>
+                        <span class="txt2">15,000원</span>
+                      </p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide imglist1">
+                    <a href="#">
+                      <p class="pic07"></p>
+                      <p class="text_box">
+                        <span class="txt1">미르텀블러(라벤더퍼플)</span><span class="ml">16oz</span>
+                        <span class="txt2">35,000원</span>
+                      </p>
+                    </a>
+                  </div>
+                  <div class="swiper-slide imglist1">
+                    <a href="#">
+                      <p class="pic08"></p>
+                      <p class="text_box">
+                        <span class="txt1">미르캠프컵(라벤더퍼플)</span><span class="ml">20oz</span>
+                        <span class="txt2">37,000원</span>
+                      </p>
+                    </a>
+                  </div>    
             </div>
-            <div class="sl_control"></div>
+
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+ 
+           
           </div>
+          
+          <h2>What's NEW</h2>
           <div class="NEW_slider">
-            <h2>What's NEW</h2>
-            <div class="slide_box2">
-              <div class="slide_box2">
+            
+            <div class="slide_box2">  
                 <div class="box2_info">
                   <a href="#">
                     <p class="pic"></p>
@@ -132,14 +202,11 @@
                   <a href="#">
                     <p class="pic3"></p>
                     <p class="text_box2">
-                      <span class="txt3"
-                        >2022 08 Plain Butter Scone & Cranberry Cream Cheese
-                        Scone</span
-                      >
+                      <span class="txt3">2022 08 Plain Butter Scone & Cranberry Cream Cheese Scone</span>
                     </p>
                   </a>
                 </div>
-              </div>
+              
             </div>
             <div class="sl_control"></div>
           </div>
@@ -184,17 +251,39 @@
               <a href="#">위치기반서비스 이용약관</a>
             </div>
             <div class="f_address">
-              <span
-                >(주)커피빈코리아 대표이사 감종철 ㅣ 사업자등록번호 120-86-07029
-                ㅣ 통신판매업신고 제 2010-서울강남-00560</span
-              >
+              <span>(주)커피빈코리아 대표이사 감종철 ㅣ 사업자등록번호 120-86-07029
+                ㅣ 통신판매업신고 제 2010-서울강남-00560</span>
               <span>서울시 강남구 봉은사로 99길 7 ㅣ 고객센터 02-1577-4708 (09:00 -
                 18:00) ㅣE-mail : cbk@coffeebeankorea.com</span>
-              <span> <br />ⓒ 2021. The Coffee Bean. All rights reserved.</span>
+              <span> <br/>ⓒ 2021. The Coffee Bean. All rights reserved.</span> 
             </div>
           </div>
         </div>
       </footer>
     </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+
   </body>
 </html>

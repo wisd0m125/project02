@@ -1,17 +1,17 @@
 #wrap {
   margin: auto;
-  
 }
 #header {
   margin: auto;
   margin-top: -140px;
-  background: rgb(255,255,255);
-  border-bottom: 1px solid rgb(238,238,238);
+  background: rgb(255, 255, 255);
+  border-bottom: 1px solid rgb(238, 238, 238);
   display: inline-block;
   position: fixed;
-  right:0;
+  right: 0;
   left: 0;
   word-break: break-all;
+  z-index: 9999;
 }
 #header .util_m {
   height: 40px;
@@ -34,10 +34,9 @@
 #header .util_m .btn {
   width: 60px;
   height: 40px;
-  background: url(/project2/images/Capture.png) no-repeat 100% center ;
+  background: url(/images/Capture.png) no-repeat 100% center;
   background-size: cover;
 }
-  
 
 /* ----------gnb----------- */
 
@@ -52,8 +51,8 @@
 #header .gnb_box {
   display: inline-block;
   width: 1900px;
-  margin:auto;
-  margin-left: 15%
+  margin: auto;
+  margin-left: 15%;
 }
 #header .gnb ul {
   margin-left: 3%;
@@ -62,7 +61,6 @@
   float: left;
   line-height: 100px;
   padding: 0px 75px 0px 30px;
-
 }
 #header .gnb li a {
   font-size: 16px;
@@ -71,13 +69,12 @@
   text-align: center;
 }
 #header .gnb .logo {
-  background: url(/project2/images/coffeebin_image23.png) no-repeat 50%;
+  background: url(/images/coffeebin_image23.png) no-repeat 50%;
   background-size: cover;
   width: 105px;
   height: 80px;
   margin: 0.6% 3% auto;
 }
-
 /* ----------banner----------- */
 .main_wrap {
   width: 1200px;
@@ -85,31 +82,30 @@
 }
 #main_content {
   width: 100%;
-  margin:auto;
+  margin: auto;
 }
 #main_content .main_banner {
   height: 700px;
-  background: url(/project2/images/coffeebin_image3.jpg) no-repeat center 50%;
+  background: url(/images/coffeebin_image3.jpg) no-repeat center 50%;
   display: block;
 }
 #main_content .sub_banner {
   height: 400px;
-  background: url(/project2/images/coffeebin_image1.jpg) no-repeat center 50%;
+  background: url(/images/coffeebin_image1.jpg) no-repeat center 50%;
 }
 
 /* ----------content------------ */
-.MD_slider,
+.mySwiper,
 .NEW_slider {
   text-align: center;
   flex-wrap: wrap;
   display: flex;
-  justify-content: space-between;
-  align-content: space-between;
 }
 .main_wrap h2 {
   padding: 0;
   margin: 0;
   margin-top: 10px;
+  padding-bottom: 30px;
   text-align: center;
   width: 100%;
   font-size: 35px;
@@ -120,47 +116,62 @@
 }
 .sl_control {
   height: 10%;
-  width: 100%;
+  width: 17%;
   border: solid 1px;
   background: #fff;
-  display: flex;
 }
 
-/* -------MD_slider ------- */
-.MD_slider {
+/* -------swiper1 ------- */
+.mySwiper {
   height: 640px;
+  width: 100%;
+  margin: auto;
   overflow: hidden;
 }
-.MD_slider .slide_box1 {
-  width: 1200px;
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: space-between;
-  align-content: space-between;
+
+.mySwiper .slidebox1, .slidebox2 {
+  width: 4200px;
+  height: 455px;
 }
-.MD_slider a {
+.mySwiper a {
   display: block;
   width: 300px;
   height: 300px;
 }
-.MD_slider .pic,
+.mySwiper .pic,
 .pic02,
 .pic03,
-.pic04 {
-  background: url(../images/coffeebin_image11.jpg) no-repeat;
+.pic04,
+.pic05,
+.pic06,
+.pic07,
+.pic08 {
+  background: url(/images/coffeebin_image11.jpg) no-repeat;
   background-size: cover;
   margin: auto;
   width: 300px;
   height: 300px;
 }
 .pic02 {
-  background: url(../images/coffeebin_image13.jpg) no-repeat;
+  background: url(/images/coffeebin_image13.jpg) no-repeat;
 }
 .pic03 {
-  background: url(../images/coffeebin_image8.jpg) no-repeat;
+  background: url(/images/coffeebin_image8.jpg) no-repeat;
 }
 .pic04 {
-  background: url(../images/coffeebin_image5.jpg) no-repeat;
+  background: url(/images/coffeebin_image5.jpg) no-repeat;
+}
+.pic05 {
+  background: url(/images/coffeebin_image9.jpg) no-repeat;
+}
+.pic06 {
+  background: url(/images/coffeebin_image8.jpg) no-repeat;
+}
+.pic07 {
+  background: url(/images/coffeebin_image17.jpg) no-repeat;
+}
+.pic08 {
+  background: url(/images/coffeebin_image15.jpg) no-repeat;
 }
 .text_box {
   display: block;
@@ -175,14 +186,15 @@
   word-break: break-all;
   word-spacing: -5px;
   letter-spacing: -1px;
-  margin: 15px 0px 10px 0px;
+  margin: 15px 0px 5px 0px;
   font-family: "Archer-Semibold", "NanumBarunGothic" sans-serif;
   font-weight: 700;
   font-size: 18px;
   color: rgb(51, 51, 51);
 }
 .ml {
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 500;
   font-family: "Archer-Semibold", "NanumBarunGothic" sans-serif;
 }
 .txt2 {
@@ -213,18 +225,18 @@
 .NEW_slider .box2_info .pic,
 .pic2,
 .pic3 {
-  background: url(../images/coffeebin_image50.jpg) no-repeat center;
+  background: url(/images/coffeebin_image50.jpg) no-repeat center;
   background-size: cover;
   margin: auto;
   width: 380px;
   height: 470px;
   overflow: hidden;
 }
-  .pic2 {
-    background: url(../images/coffeebin_image59.jpg) no-repeat center;
+.pic2 {
+  background: url(/images/coffeebin_image59.jpg) no-repeat center;
 }
-  .pic3 {
-    background: url(../images/coffeebin_image57.jpg) no-repeat center;
+.pic3 {
+  background: url(/images/coffeebin_image57.jpg) no-repeat center;
 }
 .text_box2 {
   width: 380px;
@@ -266,73 +278,73 @@
   margin: auto;
 }
 .promotion li {
-  background: url(../images/coffeebin_image19.jpg) center 100% no-repeat;
+  background: url(/images/coffeebin_image19.jpg) center 100% no-repeat;
   background-size: cover;
   height: 200px;
   width: 200px;
 }
 .promotion li:nth-child(2) {
-  background: url(../images/coffeebin_image70.jpg) center 100% no-repeat;
+  background: url(/images/coffeebin_image70.jpg) center 100% no-repeat;
   background-size: cover;
   height: 200px;
   width: 200px;
 }
 .promotion li:nth-child(3) {
-  background: url(../images/coffeebin_image66.jpg) center 100% no-repeat;
+  background: url(/images/coffeebin_image66.jpg) center 100% no-repeat;
   background-size: cover;
   height: 200px;
   width: 200px;
 }
 .promotion li:nth-child(4) {
-  background: url(../images/coffeebin_image71.jpg) center 100% no-repeat;
+  background: url(/images/coffeebin_image71.jpg) center 100% no-repeat;
   background-size: cover;
   height: 200px;
   width: 200px;
 }
 .promotion li:nth-child(5) {
-  background: url(../images/coffeebin_image75.jpg) center 100% no-repeat;
+  background: url(/images/coffeebin_image75.jpg) center 100% no-repeat;
   background-size: cover;
   height: 200px;
   width: 200px;
 }
 .promotion li:nth-child(6) {
-  background: url(../images/coffeebin_image62.jpg) center 100% no-repeat;
+  background: url(/images/coffeebin_image62.jpg) center 100% no-repeat;
   background-size: cover;
   height: 200px;
   width: 200px;
 }
 .promotion li:nth-child(7) {
-  background: url(../images/coffeebin_image58.jpg) center 100% no-repeat;
+  background: url(/images/coffeebin_image58.jpg) center 100% no-repeat;
   background-size: cover;
   height: 200px;
   width: 200px;
 }
 .promotion li:nth-child(8) {
-  background: url(../images/coffeebin_image54.jpg) center 100% no-repeat;
+  background: url(/images/coffeebin_image54.jpg) center 100% no-repeat;
   background-size: cover;
   height: 200px;
   width: 200px;
 }
 .promotion li:nth-child(9) {
-  background: url(../images/coffeebin_image25.jpg) center 100% no-repeat;
+  background: url(/images/coffeebin_image25.jpg) center 100% no-repeat;
   background-size: cover;
   height: 200px;
   width: 200px;
 }
 .promotion li:nth-child(10) {
-  background: url(../images/coffeebin_image22.jpg) center 100% no-repeat;
+  background: url(/images/coffeebin_image22.jpg) center 100% no-repeat;
   background-size: cover;
   height: 200px;
   width: 200px;
 }
 .promotion li:nth-child(11) {
-  background: url(../images/coffeebin_image44.jpg) center 100% no-repeat;
+  background: url(/images/coffeebin_image44.jpg) center 100% no-repeat;
   background-size: cover;
   height: 200px;
   width: 200px;
 }
 .promotion li:nth-child(12) {
-  background: url(../images/coffeebin_image38.jpg) center 100% no-repeat;
+  background: url(/images/coffeebin_image38.jpg) center 100% no-repeat;
   background-size: cover;
   height: 200px;
   width: 200px;
@@ -357,12 +369,12 @@
   background: #eeee;
 }
 .inner_footer {
-  position:relative;
+  position: relative;
   top: 30%;
   width: 1200px;
   margin: auto;
   padding-top: 18px;
-  border-top: 1px solid  rgb(95,77,63);
+  border-top: 1px solid rgb(95, 77, 63);
 }
 .f_sns {
   box-sizing: border-box;
@@ -371,7 +383,7 @@
   display: inline-block;
   flex-wrap: wrap;
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
   align-content: space-between;
   margin: auto;
 }
@@ -380,29 +392,28 @@
   height: 40px;
   background-size: cover;
   text-indent: -99999px;
-  float:left;
+  float: left;
 }
 .f_sns .fb {
-  background: url(/project2/images/coffeebin_image13.png) center 100% no-repeat;
+  background: url(/images/coffeebin_image13.png) center 100% no-repeat;
 }
 .f_sns .insta {
-  background: url(/project2/images/coffeebin_image16.png) center 100% no-repeat;
+  background: url(/images/coffeebin_image16.png) center 100% no-repeat;
 }
 .f_sns .blog {
-  background: url(/project2/images/coffeebin_image12.png) center 100% no-repeat;
+  background: url(/images/coffeebin_image12.png) center 100% no-repeat;
 }
 .f_sns .twit {
-  background: url(/project2/images/coffeebin_image20.png) center 100% no-repeat;
+  background: url(/images/coffeebin_image20.png) center 100% no-repeat;
 }
 .f_service a {
   display: inline-block;
   font-size: 13px;
   margin: 0 5px;
-  color: rgb(95,77,63);
- 
+  color: rgb(95, 77, 63);
 }
 .f_service .im {
-  color:rgb(243, 130, 0)
+  color: rgb(243, 130, 0);
 }
 .f_address {
   box-sizing: border-box;
@@ -411,9 +422,8 @@
   word-break: keep-all;
 }
 .f_address span {
-  font-family: 'NanumBarunGothic';
+  font-family: "NanumBarunGothic";
   font-size: 13px;
-  color: rgb(95,77,63);
+  color: rgb(95, 77, 63);
   line-height: 24px;
-
 }
