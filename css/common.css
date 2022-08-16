@@ -14,10 +14,7 @@
   word-break: break-all;
   z-index: 9999;
 }
-.header_wrap {
-  width: 1900px;
-  margin: auto;
-}
+
 #header .util_m {
   height: 40px;
   width: 100%;
