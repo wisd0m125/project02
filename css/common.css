@@ -1,3 +1,4 @@
+@charset "UTF-8"; 
 #wrap {
   margin: auto;
 }
@@ -12,6 +13,10 @@
   left: 0;
   word-break: break-all;
   z-index: 9999;
+}
+.header_wrap {
+  width: 1900px;
+  margin: auto;
 }
 #header .util_m {
   height: 40px;
@@ -95,12 +100,6 @@
 }
 
 /* ----------content------------ */
-.mySwiper,
-.NEW_slider {
-  text-align: center;
-  flex-wrap: wrap;
-  display: flex;
-}
 .main_wrap h2 {
   padding: 0;
   margin: 0;
@@ -114,31 +113,63 @@
   font-weight: 500;
   font-family: "Archer-Semibold", "NanumBarunGothic", sans-serif;
 }
-.sl_control {
-  height: 10%;
-  width: 17%;
-  border: solid 1px;
-  background: #fff;
+.swiper-slide {
+  display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .swiper {
+    width: 100%;
+    height: 100%;
+ }
+.mySwiper01,
+.mySwiper02 {
+  text-align: center;
+  flex-wrap: wrap;
+  display: flex;
+}
+.imglist1, .imglist2 {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* -------swiper1 ------- */
-.mySwiper {
+.mySwiper01 {
   height: 640px;
   width: 100%;
   margin: auto;
   overflow: hidden;
 }
 
-.mySwiper .slidebox1, .slidebox2 {
+.mySwiper01 .slidebox1 {
   width: 4200px;
   height: 455px;
 }
-.mySwiper a {
+.mySwiper01 a {
   display: block;
   width: 300px;
   height: 300px;
 }
-.mySwiper .pic,
+      .swiper-button-next .btn01 {
+        position: absolute;
+        right:-2px;
+      }
+      .swiper-button-prev .btn01 {
+        position: absolute;
+        left:-2px;
+      }
+.mySwiper01 .pic,
 .pic02,
 .pic03,
 .pic04,
@@ -159,7 +190,7 @@
   background: url(/images/coffeebin_image8.jpg) no-repeat;
 }
 .pic04 {
-  background: url(/images/coffeebin_image5.jpg) no-repeat;
+  background: url(/images/coffeebin_image15.jpg) no-repeat;
 }
 .pic05 {
   background: url(/images/coffeebin_image9.jpg) no-repeat;
@@ -204,27 +235,35 @@
   color: rgb(207, 102, 26);
 }
 
-/* -------NEW_slider ------- */
-.NEW_slider {
+/* ------.mySwiper02 ------- */
+.mySwiper02 {
   height: 720px;
   overflow: hidden;
+  width: 100%;
+  margin: auto;
 }
-.NEW_slider .slide_box2 {
-  width: 1200px;
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: space-between;
-  align-content: space-between;
+.mySwiper02 .slidebox2 {
+  width:8200px;
+  height:585px;
 }
-.NEW_slider a {
+.mySwiper02 a {
   display: block;
   width: 380px;
   height: 585px;
 }
+.swiper-button-next{
+  position: absolute;
+  top: 40%;
+  right: 0%;
+}
+.swiper-button-prev{
+  position: absolute;
+  top: 40%;
+  left: 0%;
+}
 
-.NEW_slider .box2_info .pic,
-.pic2,
-.pic3 {
+.mySwiper02 .imglist2 .pic,
+.pic2,.pic3,.pic4,.pic5,.pic6,.pic7,.pic8,.pic9,.pic10,.pic11,.pic12,.pic13,.pic14,.pic15 {
   background: url(/images/coffeebin_image50.jpg) no-repeat center;
   background-size: cover;
   margin: auto;
@@ -237,6 +276,42 @@
 }
 .pic3 {
   background: url(/images/coffeebin_image57.jpg) no-repeat center;
+}
+.pic4 {
+  background: url(/images/coffeebin_image54.jpg) no-repeat center;
+}
+.pic5 {
+  background: url(/images/coffeebin_image57.jpg) no-repeat center;
+}
+.pic6 {
+  background: url(/images/coffeebin_image43.jpg) no-repeat center;
+}
+.pic7 {
+  background: url(/images/coffeebin_image39.jpg) no-repeat center;
+}
+.pic8 {
+  background: url(/images/coffeebin_image36.jpg) no-repeat center;
+}
+.pic9 {
+  background: url(/images/coffeebin_image31.jpg) no-repeat center;
+}
+.pic10 {
+  background: url(/images/coffeebin_image27.jpg) no-repeat center;
+}
+.pic11 {
+  background: url(/images/coffeebin_image55.jpg) no-repeat center;
+}
+.pic12 {
+  background: url(/images/coffeebin_image71.jpg) no-repeat center;
+}
+.pic13 {
+  background: url(/images/coffeebin_image71.jpg) no-repeat center;
+}
+.pic14 {
+  background: url(/images/coffeebin_image67.jpg) no-repeat center;
+}
+.pic15 {
+  background: url(/images/coffeebin_image63.jpg) no-repeat center;
 }
 .text_box2 {
   width: 380px;

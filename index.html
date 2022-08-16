@@ -5,82 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>coffee bean</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="js/swiper.json">
     <link rel="stylesheet" href="css/common.css" />
-
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-    
-      <link rel="stylesheet" href="js/swiper.json">
-      <link rel="stylesheet" href="css/reset.css" />
-    <style>
-     .swiper-slide1 {
-       display: -webkit-box;
-       display: -ms-flexbox;
-       display: -webkit-flex;
-       display: flex;
-       -webkit-box-pack: center;
-       -ms-flex-pack: center;
-       -webkit-justify-content: center;
-       justify-content: center;
-       -webkit-box-align: center;
-       -ms-flex-align: center;
-       -webkit-align-items: center;
-       align-items: center;
-      }
-      .swiper {
-         width: 100%;
-         height: 100%;
-      }
-      .swiper-button-next,
-      .swiper-button-prev {
-        position: absolute;
-        top: 40%;
-      }
-      .swiper-button-next {
-        right:-2px;
-      }
-      .swiper-button-prev
-      {
-        left:-2px;
-      }
-      .swiper-slide .imglist1 {
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-    </style>
   </head>
   <body>
     <div id="wrap">
       <header id="header">
-        <div class="util_m cf">
-          <ul class="fr">
-            <li><a href="#">로그인</a></li>
-            <li><a href="#">매장찾기</a></li>
-            <li><a href="#">채용정보</a></li>
-            <li><a href="#">단체 및 기업구매</a></li>
-            <li><a href="#"> 고객서비스</a></li>
-            <li><a class="btn fr" href="#"></a></li>
-          </ul>
-        </div>
-        <div class="gnb cf">
-          <div class="gnb_box">
-            <a class="logo fl" href="#"></a>
-            <div class="gnb_menu">
-              <ul class="fl">
-                <li><a href="#">BUY ONLINE</a></li>
-                <li><a href="#">MEMBER'S CLUB</a></li>
-                <li><a href="#">MENU</a></li>
-                <li><a href="#">COFFEE BEAN</a></li>
-                <li><a href="#">CBTL</a></li>
-                <li>
-                  <button class="search_btn">
-                    <img src="images/coffeebin_image17.png" alt="" />
-                  </button>
-                </li>
-              </ul>
+        <div class="header_wrap">
+          <div class="util_m cf">
+            <ul class="fr">
+              <li><a href="#">로그인</a></li>
+              <li><a href="#">매장찾기</a></li>
+              <li><a href="#">채용정보</a></li>
+              <li><a href="#">단체 및 기업구매</a></li>
+              <li><a href="#"> 고객서비스</a></li>
+              <li><a class="btn fr" href="#"></a></li>
+            </ul>
+          </div>
+          <div class="gnb cf">
+            <div class="gnb_box">
+              <a class="logo fl" href="#"></a>
+              <div class="gnb_menu">
+                <ul class="fl">
+                  <li><a href="#">BUY ONLINE</a></li>
+                  <li><a href="#">MEMBER'S CLUB</a></li>
+                  <li><a href="#">MENU</a></li>
+                  <li><a href="#">COFFEE BEAN</a></li>
+                  <li><a href="#">CBTL</a></li>
+                  <li>
+                    <button class="search_btn">
+                      <img src="images/coffeebin_image17.png" alt="" />
+                    </button>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -96,7 +56,7 @@
         </div>
         <div class="main_wrap cf">
           <h2>MD'S PICK</h2>
-          <div class="swiper mySwiper">
+          <div class="swiper mySwiper01">
               <div class="swiper-wrapper slidebox1">
                   <div class="swiper-slide imglist1">
                     <a href="#">
@@ -170,19 +130,15 @@
                     </a>
                   </div>    
             </div>
-
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next btn01"></div>
+              <div class="swiper-button-prev btn01"></div>
               <div class="swiper-pagination"></div>
- 
-           
           </div>
           
           <h2>What's NEW</h2>
-          <div class="NEW_slider">
-            
-            <div class="slide_box2">  
-                <div class="box2_info">
+          <div class="swiper mySwiper02">
+            <div class="swiper-wrapper slidebox2">  
+                <div class="swiper-slide imglist2">
                   <a href="#">
                     <p class="pic"></p>
                     <p class="text_box2">
@@ -190,7 +146,7 @@
                     </p>
                   </a>
                 </div>
-                <div class="box2_info">
+                <div class="swiper-slide imglist2">
                   <a href="#">
                     <p class="pic2"></p>
                     <p class="text_box2">
@@ -198,7 +154,7 @@
                     </p>
                   </a>
                 </div>
-                <div class="box2_info">
+                <div class="swiper-slide imglist2">
                   <a href="#">
                     <p class="pic3"></p>
                     <p class="text_box2">
@@ -206,9 +162,107 @@
                     </p>
                   </a>
                 </div>
-              
-            </div>
-            <div class="sl_control"></div>
+                <div class="swiper-slide imglist2">
+                  <a href="#">
+                    <p class="pic4"></p>
+                    <p class="text_box2">
+                      <span class="txt3">2022 08 Black Olive Potato Bagel & Olive Basil Bagel</span>
+                    </p>
+                  </a>
+                </div>
+                <div class="swiper-slide imglist2">
+                  <a href="#">
+                    <p class="pic5"></p>
+                    <p class="text_box2">
+                      <span class="txt3">2022 07 Maldon - Salted Butter Rolls</span>
+                    </p>
+                  </a>
+                </div>
+                <div class="swiper-slide imglist2">
+                  <a href="#">
+                    <p class="pic6"></p>
+                    <p class="text_box2">
+                      <span class="txt3">2022 07 Peach Yogurt Cake</span>
+                    </p>
+                  </a>
+                </div>
+                <div class="swiper-slide imglist2">
+                  <a href="#">
+                    <p class="pic7"></p>
+                    <p class="text_box2">
+                      <span class="txt3">2022 07 Summer Breeze</span>
+                    </p>
+                  </a>
+                </div>
+                <div class="swiper-slide imglist2">
+                  <a href="#">
+                    <p class="pic8"></p>
+                    <p class="text_box2">
+                      <span class="txt3">2022 06 Bacon Scallion Cream Cheese Bagel</span>
+                    </p>
+                  </a>
+                </div>
+                <div class="swiper-slide imglist2">
+                  <a href="#">
+                    <p class="pic9"></p>
+                    <p class="text_box2">
+                      <span class="txt3">2022 06 What a Sweet Color Purple</span>
+                    </p>
+                  </a>
+                </div>
+                <div class="swiper-slide imglist2">
+                  <a href="#">
+                    <p class="pic10"></p>
+                    <p class="text_box2">
+                      <span class="txt3">2022 06 What a Sweet Color Purple</span>
+                    </p>
+                  </a>
+                </div>
+                <div class="swiper-slide imglist2">
+                  <a href="#">
+                    <p class="pic11"></p>
+                    <p class="text_box2">
+                      <span class="txt3">2022 06 Do It(eat) Yourself</span>
+                    </p>
+                  </a>
+                </div>
+                <div class="swiper-slide imglist2">
+                  <a href="#">
+                    <p class="pic12"></p>
+                    <p class="text_box2">
+                      <span class="txt3">2022 06 My Pleasure In Ordinary Days</span>
+                    </p>
+                  </a>
+                </div>
+                <div class="swiper-slide imglist2">
+                  <a href="#">
+                    <p class="pic13"></p>
+                    <p class="text_box2">
+                      <span class="txt3">2022 06 My Pleasure In Ordinary Days</span>
+                    </p>
+                  </a>
+                </div>
+                <div class="swiper-slide imglist2">
+                  <a href="#">
+                    <p class="pic14"></p>
+                    <p class="text_box2">
+                      <span class="txt3">2022 05 Fresh Milk Honey Cake & White Cheese Mousse Cake</span>
+                    </p>
+                  </a>
+                </div>
+                <div class="swiper-slide imglist2">
+                  <a href="#">
+                    <p class="pic15"></p>
+                    <p class="text_box2">
+                      <span class="txt3">2022 05 My Marvelous Dimon</span>
+                    </p>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+
           </div>
         </div>
         <div class="promotion">
@@ -262,28 +316,8 @@
       </footer>
     </div>
 
-
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
-        },
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
+   <script src="js/custom.js.js"></script>
 
   </body>
 </html>
