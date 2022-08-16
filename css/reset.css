@@ -12,6 +12,7 @@ html {
 #wrap {
 	margin: auto;
   margin-top: 140px;
+  width: 100%;
 }
 div {
   display: block;

@@ -1,37 +1,34 @@
 #wrap {
-  width: 1900px;
+  margin: auto;
+  
 }
 #header {
-  margin:auto;
+  margin: auto;
   margin-top: -140px;
   background: rgb(255,255,255);
   border-bottom: 1px solid rgb(238,238,238);
-  display: block;
-  z-index: -99999px;
+  display: inline-block;
   position: fixed;
-}
-#header .util_m {
-  height: 140px;
-  width: 100%;
-  background: silver;
+  right:0;
+  left: 0;
+  word-break: break-all;
 }
 #header .util_m {
   height: 40px;
-
+  width: 100%;
+  background: #eeee;
 }
 #header .util_m ul {
   text-align: center;
-  display: inline-block;
-  margin:auto;
-  width: 1200px;
   height: 40px;
+  width: 48%;
+  padding-right: 14%;
 }
-
 #header .util_m li {
   display: inline-block;
   font-size: 14px;
   word-spacing: 1px;
-  margin-right: 20px;
+  margin-right: 3%;
   margin-bottom: -12px;
 }
 #header .util_m .btn {
@@ -39,8 +36,6 @@
   height: 40px;
   background: url(/project2/images/Capture.png) no-repeat 100% center ;
   background-size: cover;
-  display: block;
-  
 }
   
 
@@ -57,20 +52,21 @@
 #header .gnb_box {
   display: inline-block;
   width: 1900px;
+  margin:auto;
   margin-left: 15%
 }
 #header .gnb ul {
-  margin-left: 30px;
+  margin-left: 3%;
 }
 #header .gnb li {
   float: left;
   line-height: 100px;
-  padding: 0px 60px 0px 32px;
+  padding: 0px 75px 0px 30px;
 
 }
 #header .gnb li a {
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: bold;
   line-height: 3.5;
   text-align: center;
 }
@@ -79,7 +75,7 @@
   background-size: cover;
   width: 105px;
   height: 80px;
-  margin: 10px 80px 0px 0px;
+  margin: 0.6% 3% auto;
 }
 
 /* ----------banner----------- */
@@ -88,7 +84,8 @@
   margin: 55px auto 0;
 }
 #main_content {
-  width: 1900px;
+  width: 100%;
+  margin:auto;
 }
 #main_content .main_banner {
   height: 700px;
@@ -103,7 +100,6 @@
 /* ----------content------------ */
 .MD_slider,
 .NEW_slider {
-  background: #eaeaea;
   text-align: center;
   flex-wrap: wrap;
   display: flex;
@@ -175,7 +171,7 @@
 }
 .txt1 {
   display: block;
-  max-height: 44px;
+  max-height: 40px;
   word-break: break-all;
   word-spacing: -5px;
   letter-spacing: -1px;
@@ -233,7 +229,7 @@
 .text_box2 {
   width: 380px;
   height: 90px;
-  padding: 0 40px;
+  padding: 20px 40px;
   text-align: center;
 }
 .txt3 {
@@ -247,21 +243,22 @@
 
 /* ------- promotion ------- */
 .promotion h2 {
-  margin: 0 0 25px;
+  width: 100%;
+  margin: 0 0 40px;
   font-size: 24px;
   font-weight: 400;
   color: #fff;
 }
 .promotion {
   width: 100%;
-  height: 823px;
+  height: 723px;
   padding: 55px 0 40px;
   text-align: center;
   background: rgb(124, 81, 161);
 }
 .promotion .pro_insta {
-  height: 600px;
-  width: 900px;
+  height: 200px;
+  width: 1200px;
   flex-wrap: wrap;
   display: flex;
   justify-content: center;
@@ -340,7 +337,7 @@
   height: 200px;
   width: 200px;
 }
-.promotion .btn {
+.promotion .btn1 {
   display: inline-block;
   text-align: center;
   width: 400px;
@@ -350,14 +347,14 @@
   letter-spacing: 1px;
   color: #fff;
   background: rgb(243, 130, 0);
-  margin-top: 30px;
+  margin-top: 270px;
 }
 
 /* ------- footer ------- */
 #footer {
   width: 100%;
   height: 300px;
-  background: silver;
+  background: #eeee;
 }
 .inner_footer {
   position:relative;
