@@ -6,42 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>coffee bean</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="js/swiper.json">
-    <link rel="stylesheet" href="css/common.css" />
-    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    
   </head>
   <body>
+
     <div id="wrap">
       <header id="header">
      
-          <div class="util_m cf">
-            <ul class="fr">
-              <li><a href="#">로그인</a></li>
-              <li><a href="#">매장찾기</a></li>
-              <li><a href="#">채용정보</a></li>
-              <li><a href="#">단체 및 기업구매</a></li>
-              <li><a href="#"> 고객서비스</a></li>
-              <li><a class="btn fr" href="#"></a></li>
-            </ul>
-          </div>
-          <div class="gnb cf">
-            <div class="gnb_box">
-              <a class="logo fl" href="#"></a>
-              <div class="gnb_menu">
-                <ul class="fl">
-                  <li><a href="#">BUY ONLINE</a></li>
-                  <li><a href="#">MEMBER'S CLUB</a></li>
-                  <li><a href="#">MENU</a></li>
-                  <li><a href="#">COFFEE BEAN</a></li>
-                  <li><a href="#">CBTL</a></li>
-                  <li>
-                    <button class="search_btn">
-                      <img src="images/coffeebin_image17.png" alt="" />
-                    </button>
-                  </li>
-                </ul>
-              </div>
+          <div class="header_area">
+            <div class="util_m">
+              <p class="openMOgnb">
+                <a href="#"
+                  ><b class="ir_so">메뉴드롭다운</b><span></span><span></span
+                  ><span></span
+                ></a>
+              </p>
+              <ul class="util">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">매장찾기</a></li>
+                <li><a href="#">채용정보</a></li>
+                <li><a href="#">단체ㆍ기업구매</a></li>
+                <li><a href="#"> 고객서비스</a></li>
+              </ul>
             </div>
+            <div class="gnb cf">
+              <div class="gnb_box">
+                <a class="logo" href="#"></a>
+                <div class="gnb_menu">
+                  <ul>
+                    <li><a href="#">BUY ONLINE</a>
+                    <div class="gnb_depth gnb_depth2_1">
+                      <ul class="submenu_list fl">
+                        <li><a href="#">view all</a></li>
+                        <li><a href="#">분쇄형</a></li>
+                        <li><a href="#">파우치</a></li>
+                        <li><a href="#">캡슐</a></li>
+                        <li><a href="#">원두</a></li>
+                        <li><a href="#">티</a></li>
+                        <li><a href="#">상품</a></li>
+                        <li><a href="#">CBTL시스템</a></li>
+                      </ul>
+                    </div></li>
+                    <li><a href="#">MEMBER'S CLUB</a>
+                      <div class="gnb_depth gnb_depth2_2">
+                        <ul class="submenu_list">
+                          <li><a href="#">커피빈 멤버스클럽</a></li>
+                          <li><a href="#">나의 커피빈</a></li>
+                        </ul>
+                      </div></li>
+                    <li><a href="#">MENU</a>
+                      <div class="gnb_depth gnb_depth2_3">
+                        <ul class="submenu_list">
+                          <li><a href="#">음료</a></li>
+                          <li><a href="#">푸드</a></li>
+                          <li><a href="#">상품</a></li>
+                          <li><a href="#">카드</a></li>
+                        </ul>
+                      </div></li>
+                    <li><a href="#">COFFEE BEAN</a>
+                      <div class="gnb_depth gnb_depth2_4">
+                        <ul class="submenu_list">
+                          <li><a href="#">커피빈코리아</a></li>
+                          <li><a href="#">커피빈소식</a></li>
+                          <li><a href="#">매장안내</a></li>
+                          <li><a href="#">사회공헌</a></li>
+                          <li><a href="#">채용안내</a></li>
+                          <li><a href="#">신규입점제의</a></li>
+                        </ul>
+                      </div></li>
+                    <li><a href="#">CBTL</a>
+                      <div class="gnb_depth gnb_depth2_5">
+                        <ul class="submenu_list">
+                          <li><a href="#">CBTL 가이드</a></li>
+                          <li><a href="#">CBTL 서비스</a></li>
+                          <li><a href="#">CBTL FAQ</a></li>
+                          <li><a href="#">AS 안내</a></li>
+                          <li><a href="#">AS 신청</a></li>
+                          <li><a href="#">제품설명서</a></li>
+                        </ul>
+                      </div></li>
+                    <li>
+                      <button class="search_btn">
+                        <img src="images/coffeebin_image17.png" alt="" />
+                      </button>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </div>
           </div>
       
       </header>
@@ -130,8 +186,7 @@
                     </a>
                   </div>    
             </div>
-              <div class="swiper-button-next btn01"></div>
-              <div class="swiper-button-prev btn01"></div>
+       
               <div class="swiper-pagination"></div>
           </div>
           
@@ -259,8 +314,6 @@
                   </a>
                 </div>
               </div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
               <div class="swiper-pagination"></div>
 
           </div>
@@ -316,8 +369,15 @@
       </footer>
     </div>
 
+     <p class="back_to_top">
+      <a href="#wrap" class="s_point">
+        <span>TOP</span></a>
+      </p>
+
+    <script src="js/topbtn.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-   <script src="js/custom.js.js"></script>
+   <script src="js/custom.js"></script>
 
   </body>
 </html>

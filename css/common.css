@@ -1,4 +1,4 @@
-@charset "UTF-8"; 
+@charset "UTF-8";
 #wrap {
   margin: auto;
 }
@@ -16,67 +16,134 @@
 }
 
 #header .util_m {
+  display: flex;
   height: 40px;
-  width: 100%;
   background: #eeee;
+  justify-content:center;
 }
-#header .util_m ul {
-  text-align: center;
-  height: 40px;
-  width: 48%;
-  padding-right: 14%;
+#header .util {
+  margin:auto;
+  max-width: 1600px;
+}
+#header .util li {
+  display: inline-block;
+  padding: 0px 5px 0px 20px;
 }
 #header .util_m li {
   display: inline-block;
   font-size: 14px;
   word-spacing: 1px;
-  margin-right: 3%;
   margin-bottom: -12px;
-}
-#header .util_m .btn {
-  width: 60px;
-  height: 40px;
-  background: url(/images/Capture.png) no-repeat 100% center;
-  background-size: cover;
 }
 
 /* ----------gnb----------- */
-
+#header .header_area .openMOgnb {
+  display: none;
+}
 #header .gnb {
-  flex-wrap: wrap;
   display: flex;
-  justify-content: space-evenly;
   height: 100px;
-  width: 100%;
+  max-width:1300px;
+  width:100%;
   margin: auto;
+
 }
 #header .gnb_box {
-  display: inline-block;
-  width: 1900px;
-  margin: auto;
-  margin-left: 15%;
+  display: flex;
+  margin:auto;
+  justify-content: center;
 }
 #header .gnb ul {
-  margin-left: 3%;
+  width: 1300px;
+  margin-left: 7%;
 }
 #header .gnb li {
-  float: left;
+  display: inline-block;
   line-height: 100px;
-  padding: 0px 75px 0px 30px;
+  padding: 0px 75px 0px 20px;
 }
 #header .gnb li a {
   font-size: 16px;
   font-weight: bold;
-  line-height: 3.5;
+  line-height: 2.5;
   text-align: center;
 }
 #header .gnb .logo {
-  background: url(/images/coffeebin_image23.png) no-repeat 50%;
+  background: url(../images/coffeebin_image23.png) no-repeat 50%;
   background-size: cover;
-  width: 105px;
-  height: 80px;
-  margin: 0.6% 3% auto;
+  width: 95px;
+  height: 70px;
+  margin: 1% auto;
 }
+
+.gnb li:hover .gnb_depth {
+  display: block;
+  height: 350px;
+  margin: auto;
+  max-width: 1600px;
+  background: rgba(255, 255, 255, 0.9);
+}
+.gnb_depth {
+  position: absolute;
+  left: 0;
+  right:0;
+  top: 140px;
+  width: 100%;
+  z-index: 100;
+  display: none;
+}
+
+/* -------2depth------- */
+.gnb_depth .submenu_list {
+  max-width: 1300px;
+  width:100%;
+  margin: 0;
+}
+.gnb_depth2_1 .submenu_list {
+  box-sizing: border-box;
+  padding-left: 60px;
+  padding-top: 10px;
+}
+.gnb_depth2_2 .submenu_list {
+  box-sizing: border-box;
+  padding-left: 60px;
+  padding-top: 10px;
+}
+.gnb_depth2_3 .submenu_list {
+  box-sizing: border-box;
+  padding-left: 60px;
+  padding-top: 10px;
+}
+.gnb_depth2_4 .submenu_list {
+  box-sizing: border-box;
+  padding-left: 60px;
+  padding-top: 10px;
+}
+.gnb_depth2_5 .submenu_list {
+  box-sizing: border-box;
+  padding-left: 60px;
+  padding-top: 10px;
+}
+
+.gnb_depth .submenu_list li {
+  width: 230px;
+  height: 170px;
+  margin-left: 70px;
+  margin-bottom: 5px;
+}
+.gnb_depth .submenu_list li a {
+  display: block;
+  background: rgb(152, 112, 216);
+  padding: 0px 10px 0px 0px;
+  width: 140px;
+  height: 40px;
+  color: white;
+  border-radius: 12px;
+}
+.gnb_depth .submenu_list li:last-child a {
+  padding-right: 0;
+}
+
 /* ----------banner----------- */
 .main_wrap {
   width: 1200px;
@@ -88,12 +155,12 @@
 }
 #main_content .main_banner {
   height: 700px;
-  background: url(/images/coffeebin_image3.jpg) no-repeat center 50%;
+  background: url(../images/coffeebin_image3.jpg) no-repeat center 50%;
   display: block;
 }
 #main_content .sub_banner {
   height: 400px;
-  background: url(/images/coffeebin_image1.jpg) no-repeat center 50%;
+  background: url(../images/coffeebin_image1.jpg) no-repeat center 50%;
 }
 
 /* ----------content------------ */
@@ -108,33 +175,34 @@
   color: rgb(207, 102, 26);
   margin: 10px 10px 10px 10px;
   font-weight: 500;
-  font-family: "Archer-Semibold", "NanumBarunGothic", sans-serif;
+  font-family: "Roboto" ,sans-serif;
 }
 .swiper-slide {
   display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-  .swiper {
-    width: 100%;
-    height: 100%;
- }
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
 .mySwiper01,
 .mySwiper02 {
   text-align: center;
   flex-wrap: wrap;
   display: flex;
 }
-.imglist1, .imglist2 {
+.imglist1,
+.imglist2 {
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -158,14 +226,14 @@
   width: 300px;
   height: 300px;
 }
-      .swiper-button-next .btn01 {
-        position: absolute;
-        right:-2px;
-      }
-      .swiper-button-prev .btn01 {
-        position: absolute;
-        left:-2px;
-      }
+.swiper-button-next .btn01 {
+  position: absolute;
+  right: -2px;
+}
+.swiper-button-prev .btn01 {
+  position: absolute;
+  left: -2px;
+}
 .mySwiper01 .pic,
 .pic02,
 .pic03,
@@ -174,32 +242,32 @@
 .pic06,
 .pic07,
 .pic08 {
-  background: url(/images/coffeebin_image11.jpg) no-repeat;
+  background: url(../images/coffeebin_image11.jpg) no-repeat;
   background-size: cover;
   margin: auto;
   width: 300px;
   height: 300px;
 }
 .pic02 {
-  background: url(/images/coffeebin_image13.jpg) no-repeat;
+  background: url(../images/coffeebin_image13.jpg) no-repeat;
 }
 .pic03 {
-  background: url(/images/coffeebin_image8.jpg) no-repeat;
+  background: url(../images/coffeebin_image8.jpg) no-repeat;
 }
 .pic04 {
-  background: url(/images/coffeebin_image15.jpg) no-repeat;
+  background: url(../images/coffeebin_image15.jpg) no-repeat;
 }
 .pic05 {
-  background: url(/images/coffeebin_image9.jpg) no-repeat;
+  background: url(../images/coffeebin_image9.jpg) no-repeat;
 }
 .pic06 {
-  background: url(/images/coffeebin_image8.jpg) no-repeat;
+  background: url(../images/coffeebin_image8.jpg) no-repeat;
 }
 .pic07 {
-  background: url(/images/coffeebin_image17.jpg) no-repeat;
+  background: url(../images/coffeebin_image17.jpg) no-repeat;
 }
 .pic08 {
-  background: url(/images/coffeebin_image15.jpg) no-repeat;
+  background: url(../images/coffeebin_image15.jpg) no-repeat;
 }
 .text_box {
   display: block;
@@ -215,7 +283,7 @@
   word-spacing: -5px;
   letter-spacing: -1px;
   margin: 15px 0px 5px 0px;
-  font-family: "Archer-Semibold", "NanumBarunGothic" sans-serif;
+  font-family:  "Noto Sans", "Roboto" ,sans-serif;
   font-weight: 700;
   font-size: 18px;
   color: rgb(51, 51, 51);
@@ -223,11 +291,11 @@
 .ml {
   font-size: 20px;
   font-weight: 500;
-  font-family: "Archer-Semibold", "NanumBarunGothic" sans-serif;
+  font-family:  "Noto Sans", "Roboto" ,sans-serif;
 }
 .txt2 {
   display: block;
-  font-family: "NanumBarunGothic";
+  font-family: "Noto Sans";
   font-size: 14px;
   color: rgb(207, 102, 26);
 }
@@ -240,75 +308,100 @@
   margin: auto;
 }
 .mySwiper02 .slidebox2 {
-  width:8200px;
-  height:585px;
+  width: 8200px;
+  height: 585px;
 }
 .mySwiper02 a {
   display: block;
   width: 380px;
   height: 585px;
 }
-.swiper-button-next{
+.swiper-button-next {
   position: absolute;
   top: 40%;
   right: 0%;
 }
-.swiper-button-prev{
+.swiper-button-prev {
   position: absolute;
   top: 40%;
   left: 0%;
 }
 
 .mySwiper02 .imglist2 .pic,
-.pic2,.pic3,.pic4,.pic5,.pic6,.pic7,.pic8,.pic9,.pic10,.pic11,.pic12,.pic13,.pic14,.pic15 {
-  background: url(/images/coffeebin_image50.jpg) no-repeat center;
+.pic2,
+.pic3,
+.pic4,
+.pic5,
+.pic6,
+.pic7,
+.pic8,
+.pic9,
+.pic10,
+.pic11,
+.pic12,
+.pic13,
+.pic14,
+.pic15 {
+  background: url(../images/coffeebin_image50.jpg) no-repeat center;
   background-size: cover;
   margin: auto;
   width: 380px;
   height: 470px;
   overflow: hidden;
+
+}
+@keyframes beat {
+  0% {
+      transform: scale(1.0);
+  }
+  50% {
+      transform: scale(1.3);
+  }
+  100% {
+      transform: scale(1.0);
+  }
 }
 .pic2 {
-  background: url(/images/coffeebin_image59.jpg) no-repeat center;
+  background: url(../images/coffeebin_image59.jpg) no-repeat center;
 }
 .pic3 {
-  background: url(/images/coffeebin_image57.jpg) no-repeat center;
+  background: url(../images/coffeebin_image57.jpg) no-repeat center;
 }
 .pic4 {
-  background: url(/images/coffeebin_image54.jpg) no-repeat center;
+  background: url(../images/coffeebin_image54.jpg) no-repeat center;
 }
 .pic5 {
-  background: url(/images/coffeebin_image57.jpg) no-repeat center;
+  background: url(../images/coffeebin_image57.jpg) no-repeat center;
 }
 .pic6 {
-  background: url(/images/coffeebin_image43.jpg) no-repeat center;
+  background: url(../images/coffeebin_image43.jpg) no-repeat center;
 }
 .pic7 {
-  background: url(/images/coffeebin_image39.jpg) no-repeat center;
+  background: url(../images/coffeebin_image39.jpg) no-repeat center;
 }
 .pic8 {
-  background: url(/images/coffeebin_image36.jpg) no-repeat center;
+  background: url(../images/coffeebin_image36.jpg) no-repeat center;
 }
 .pic9 {
-  background: url(/images/coffeebin_image31.jpg) no-repeat center;
+  background: url(../images/coffeebin_image31.jpg) no-repeat center;
 }
 .pic10 {
-  background: url(/images/coffeebin_image27.jpg) no-repeat center;
+  background: url(../images/coffeebin_image27.jpg) no-repeat center;
 }
 .pic11 {
-  background: url(/images/coffeebin_image55.jpg) no-repeat center;
+  background: url(../images/coffeebin_image55.jpg) no-repeat center;
 }
 .pic12 {
-  background: url(/images/coffeebin_image71.jpg) no-repeat center;
+  background: url(../images/coffeebin_image71.jpg) no-repeat center;
 }
 .pic13 {
-  background: url(/images/coffeebin_image71.jpg) no-repeat center;
+  background: url(../images/coffeebin_image71.jpg) no-repeat center;
 }
 .pic14 {
-  background: url(/images/coffeebin_image67.jpg) no-repeat center;
+  background: url(../images/coffeebin_image67.jpg) no-repeat center;
 }
 .pic15 {
-  background: url(/images/coffeebin_image63.jpg) no-repeat center;
+  background: url(../images/coffeebin_image63.jpg) no-repeat center;
 }
 .text_box2 {
   width: 380px;
@@ -319,7 +412,7 @@
 .txt3 {
   display: block;
   margin-bottom: 15px;
-  font-family: "Archer-Semibold", "NanumBarunGothic", sans-serif;
+  font-family:  "Noto Sans", "Roboto" ,sans-serif;
   font-size: 18px;
   color: rgb(207, 102, 26);
   line-height: 18px;
@@ -340,6 +433,9 @@
   text-align: center;
   background: rgb(124, 81, 161);
 }
+.promotion .insta_area{
+  display: inline-block;
+}
 .promotion .pro_insta {
   height: 200px;
   width: 1200px;
@@ -349,74 +445,82 @@
   align-content: space-between;
   margin: auto;
 }
+.pro_insta > li:hover {
+  width:200px;
+  height: 200px;
+  margin:auto;
+  overflow: hidden;
+  content:'';
+  animation: beat 1.2s 1 ease-in-out;
+}
 .promotion li {
-  background: url(/images/coffeebin_image19.jpg) center 100% no-repeat;
+  background: url(../images/coffeebin_image29.jpg) center 100% no-repeat;
   background-size: cover;
   height: 200px;
   width: 200px;
 }
 .promotion li:nth-child(2) {
-  background: url(/images/coffeebin_image70.jpg) center 100% no-repeat;
+  background: url(../images/coffeebin_image70.jpg) center 100% no-repeat;
   background-size: cover;
   height: 200px;
   width: 200px;
 }
 .promotion li:nth-child(3) {
-  background: url(/images/coffeebin_image66.jpg) center 100% no-repeat;
+  background: url(../images/coffeebin_image66.jpg) center 100% no-repeat;
   background-size: cover;
   height: 200px;
   width: 200px;
 }
 .promotion li:nth-child(4) {
-  background: url(/images/coffeebin_image71.jpg) center 100% no-repeat;
+  background: url(../images/coffeebin_image71.jpg) center 100% no-repeat;
   background-size: cover;
   height: 200px;
   width: 200px;
 }
 .promotion li:nth-child(5) {
-  background: url(/images/coffeebin_image75.jpg) center 100% no-repeat;
+  background: url(../images/coffeebin_image75.jpg) center 100% no-repeat;
   background-size: cover;
   height: 200px;
   width: 200px;
 }
 .promotion li:nth-child(6) {
-  background: url(/images/coffeebin_image62.jpg) center 100% no-repeat;
+  background: url(../images/coffeebin_image62.jpg) center 100% no-repeat;
   background-size: cover;
   height: 200px;
   width: 200px;
 }
 .promotion li:nth-child(7) {
-  background: url(/images/coffeebin_image58.jpg) center 100% no-repeat;
+  background: url(../images/coffeebin_image58.jpg) center 100% no-repeat;
   background-size: cover;
   height: 200px;
   width: 200px;
 }
 .promotion li:nth-child(8) {
-  background: url(/images/coffeebin_image54.jpg) center 100% no-repeat;
+  background: url(../images/coffeebin_image54.jpg) center 100% no-repeat;
   background-size: cover;
   height: 200px;
   width: 200px;
 }
 .promotion li:nth-child(9) {
-  background: url(/images/coffeebin_image25.jpg) center 100% no-repeat;
+  background: url(../images/coffeebin_image25.jpg) center 100% no-repeat;
   background-size: cover;
   height: 200px;
   width: 200px;
 }
 .promotion li:nth-child(10) {
-  background: url(/images/coffeebin_image22.jpg) center 100% no-repeat;
+  background: url(../images/coffeebin_image21.jpg) center 100% no-repeat;
   background-size: cover;
   height: 200px;
   width: 200px;
 }
 .promotion li:nth-child(11) {
-  background: url(/images/coffeebin_image44.jpg) center 100% no-repeat;
+  background: url(../images/coffeebin_image44.jpg) center 100% no-repeat;
   background-size: cover;
   height: 200px;
   width: 200px;
 }
 .promotion li:nth-child(12) {
-  background: url(/images/coffeebin_image38.jpg) center 100% no-repeat;
+  background: url(../images/coffeebin_image38.jpg) center 100% no-repeat;
   background-size: cover;
   height: 200px;
   width: 200px;
@@ -431,6 +535,7 @@
   letter-spacing: 1px;
   color: #fff;
   background: rgb(243, 130, 0);
+  z-index: -999;
   margin-top: 270px;
 }
 
@@ -467,16 +572,16 @@
   float: left;
 }
 .f_sns .fb {
-  background: url(/images/coffeebin_image13.png) center 100% no-repeat;
+  background: url(../images/coffeebin_image13.png) center 100% no-repeat;
 }
 .f_sns .insta {
-  background: url(/images/coffeebin_image16.png) center 100% no-repeat;
+  background: url(../images/coffeebin_image16.png) center 100% no-repeat;
 }
 .f_sns .blog {
-  background: url(/images/coffeebin_image12.png) center 100% no-repeat;
+  background: url(../images/coffeebin_image12.png) center 100% no-repeat;
 }
 .f_sns .twit {
-  background: url(/images/coffeebin_image20.png) center 100% no-repeat;
+  background: url(../images/coffeebin_image20.png) center 100% no-repeat;
 }
 .f_service a {
   display: inline-block;
@@ -494,8 +599,24 @@
   word-break: keep-all;
 }
 .f_address span {
-  font-family: "NanumBarunGothic";
+  font-family: "Noto Sans";
   font-size: 13px;
   color: rgb(95, 77, 63);
   line-height: 24px;
+}
+
+/* --------to_top------- */
+.back_to_top {
+  background: url(..../images/coffeebin_image7.png) 50% no-repeat;
+  background-size: cover;
+  position: fixed;
+  bottom:9em;
+  right: 6em;
+  width: 50px;
+  height: 50px;
+}
+.back_to_top a {
+  opacity: 0;
+  width: 50px;
+  height: 50px;
 }
