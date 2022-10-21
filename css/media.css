@@ -1,0 +1,281 @@
+@charset "UTF-8";
+@media screen and (max-width: 1199px) {
+  #wrap {
+    width: 100%;
+  }
+  .util,
+  .header_line {
+    display: none;
+  }
+  .util_m {
+    display: none;
+  }
+  .header_line.mobile {
+    display: block;
+  }
+  .header_line > .inner {
+    max-width: 1199px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  h1 {
+    margin: auto;
+  }
+  .logo {
+    position: relative;
+    right: 40%;
+  }
+  .btn_menu {
+    display: flex;
+    width: 50px;
+    height: 100px;
+    justify-content: end;
+    align-items: center;
+  }
+  .gnb {
+    display: none;
+  }
+  #main_content .main_banner {
+    width: 100vw;
+    max-width: 1199px;
+    height: 1520px;
+    background: url(../images/coffeebin_image21.jpg) no-repeat;
+    background-size: cover;
+    display: block;
+  }
+  #main_content .sub_banner {
+    width: 100%;
+    height: 740px;
+    background: url(../images/coffeebin_image75.jpg) no-repeat;
+    background-size: cover;
+  }
+  .promotion {
+    width: 100%;
+  }
+  .promotion .pro_insta {
+    width: 100vw;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .promotion .btn1 {
+    margin-top: 20px;
+  }
+  footer {
+    width: 100%;
+    text-align: center;
+  }
+  footer > .inner_footer {
+    flex-direction: column;
+    align-items: center;
+  }
+  footer .footer_service {
+    width: 100%;
+    line-height: 44px;
+  }
+  footer .f_info {
+    justify-content: center;
+    width: 100%;
+  }
+  footer .f_address {
+    justify-content: center;
+    width: 50vw;
+    margin: auto;
+  }
+  footer .f_sns {
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 1%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .banner .main_banner {
+    width: 100vw;
+    max-width: 1000px;
+    height: 1000px;
+  }
+  .banner .sub_banner {
+    height: 652px;
+  }
+  footer .f_sns a {
+    margin: 0px 0px 0px 10px;
+  }
+  .back_to_top {
+    position: fixed;
+    bottom: 3em;
+    right: 3em;
+    width: 50px;
+    height: 50px;
+    z-index: 999999999999;
+  }
+}
+@media screen and (max-width: 766px) {
+  #wrap {
+    width: 100%;
+  }
+  .header_line > .inner {
+    max-width: 766px;
+  }
+  .logo {
+    display: block;
+    margin: auto;
+  }
+  #main_content .main_banner {
+    width: 100vw;
+    height: 850px;
+    background: url(../images/coffeebin_image21.jpg) no-repeat;
+    background-size: contain;
+    display: block;
+  }
+  #main_content .sub_banner {
+    width: 100%;
+    height: 500px;
+    background: url(../images/coffeebin_image75.jpg) no-repeat;
+    background-size: contain;
+  }
+  .main_content {
+    width: 100%;
+    max-width: 766px;
+    text-align: center;
+  }
+  .main_content h2,
+  .swiper-pagination {
+    width: 100%;
+    max-width: 766px;
+    text-align: center;
+    margin: auto;
+  }
+  .main_wrap {
+    width: 766px;
+    margin: auto;
+    flex: none;
+  }
+  .mySwiper01 .pic,
+  .pic02,
+  .pic03,
+  .pic04,
+  .pic05,
+  .pic06,
+  .pic07,
+  .pic08 {
+    background-size: cover;
+    width: 260px;
+    height: 260px;
+  }
+  .imglist1 a {
+    margin-left: -10%;
+  }
+
+  .txt1 {
+    word-spacing: -5px;
+    letter-spacing: 0px;
+    font-size: 14px;
+  }
+  .txt3 {
+    text-align: center;
+    width: 250px;
+    font-size: 15px;
+    margin-left: 8.5%;
+  }
+  .promotion {
+    width: 100%;
+    max-width: 766px;
+  }
+  .promotion .inner {
+    display: contents;
+  }
+  .promotion h2 {
+    font-size: 20px;
+  }
+  .promotion .pro_insta {
+    width: 85vw;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .promotion ul li {
+    width: 185px;
+  }
+  footer {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+  .inner_footer {
+    position: relative;
+    top: 0;
+  }
+  footer .f_sns {
+    width: 100%;
+    justify-content: center;
+  }
+
+  footer .f_address {
+    margin-top: 15px;
+    line-height: 10px;
+    width: 45vh;
+  }
+  .back_to_top {
+    position: fixed;
+    bottom: 3em;
+    right: 1.5em;
+    width: 50px;
+    height: 50px;
+    z-index: 999999999999;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main_wrap {
+    width: 500px;
+    margin: auto;
+    flex: none;
+  }
+  #main_content .main_banner {
+    width: 100vw;
+    max-width: 500px;
+    height: 610px;
+  }
+  #main_content .sub_banner {
+    width: 100%;
+    height: 320px;
+  }
+  .main_content,
+  .promotion {
+    width: 100%;
+    max-width: 500px;
+  }
+  .main_content h2 {
+    text-align: center;
+  }
+  .imglist2 a {
+    margin-left: 12.5%;
+  }
+  .txt3 {
+    margin-left: 10%;
+  }
+
+  .promotion {
+    width: 100%;
+    max-width: 500px;
+  }
+  .promotion h2 {
+    font-size: 25px;
+  }
+  .promotion .pro_insta .pro_pic {
+    width: 148px;
+  }
+
+  footer .f_info {
+    width: 100%;
+    max-width: 500px;
+  }
+  .back_to_top {
+    position: fixed;
+    bottom: 3em;
+    right: 1em;
+    width: 50px;
+    height: 50px;
+    z-index: 999999999999;
+  }
+}

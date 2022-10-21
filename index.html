@@ -5,101 +5,466 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>coffee bean</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="./css/common.css" />
+    <meta name="robots" content="index,follow" />
+    <meta name="description" content="커피빈코리아" />
+    <meta name="author" content="김지혜" />
+    <meta name="keywords" content="커피빈, 카페, 커피빈코리아" />
+    <meta property="og:title" content="커피빈" />
+    <meta property="og:site_name" content="커피빈" />
+    <meta property="og:description" content="커피빈" />
+    <meta name="twitter:description" content="커피빈" />
+    <!-- favicon meta -->
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="./favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="./favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="./favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="./favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="./favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="./favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="./favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="./favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./favicon/android-icon-192x192.png"
+    />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- favicon -->
+
     <link rel="stylesheet" href="./css/reset.css" />
-    
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
-
     <div id="wrap">
       <header id="header">
-     
-          <div class="header_area">
-            <div class="util_m">
-              <p class="openMOgnb">
-                <a href="#"
-                  ><b class="ir_so">메뉴드롭다운</b><span></span><span></span
-                  ><span></span
-                ></a>
-              </p>
-              <ul class="util">
-                <li><a href="#">로그인</a></li>
-                <li><a href="#">매장찾기</a></li>
-                <li><a href="#">채용정보</a></li>
-                <li><a href="#">단체ㆍ기업구매</a></li>
-                <li><a href="#"> 고객서비스</a></li>
-              </ul>
-            </div>
-            <div class="gnb cf">
-              <div class="gnb_box">
-                <a class="logo" href="#"></a>
-                <div class="gnb_menu">
-                  <ul>
-                    <li><a href="#">BUY ONLINE</a>
-                    <div class="gnb_depth gnb_depth2_1">
-                      <ul class="submenu_list fl">
-                        <li><a href="#">view all</a></li>
-                        <li><a href="#">분쇄형</a></li>
-                        <li><a href="#">파우치</a></li>
-                        <li><a href="#">캡슐</a></li>
-                        <li><a href="#">원두</a></li>
-                        <li><a href="#">티</a></li>
-                        <li><a href="#">상품</a></li>
-                        <li><a href="#">CBTL시스템</a></li>
+        <div class="header_area">
+          <div class="util_m">
+            <p class="openMOgnb">
+              <a href="#"
+                ><b class="ir_so">메뉴드롭다운</b><span></span><span></span
+                ><span></span
+              ></a>
+            </p>
+            <ul class="util">
+              <li><a href="#">로그인</a></li>
+              <li><a href="#">매장찾기</a></li>
+              <li><a href="#">채용정보</a></li>
+              <li><a href="#">단체ㆍ기업구매</a></li>
+              <li><a href="#"> 고객서비스</a></li>
+            </ul>
+          </div>
+          <div class="header_line">
+            <div class="inner">
+              <a href="#" class="btn_menu"
+                ><img src="./images/ham_m.png" alt="메뉴"
+              /></a>
+              <h1>
+                <a href="#" class="logo"
+                  ><img src="./images/coffeebin_image23.png" alt="로고"
+                /></a>
+              </h1>
+              <div class="gnb">
+                <ul class="gnb_area">
+                  <li class="gnb1">
+                    <a href="#">BUY ONLINE</a>
+                    <div class="gnb2_1">
+                      <ul class="gnb2_2">
+                        <li>
+                          <a href="#">View All</a>
+                        </li>
+                        <li>
+                          <a href="#">분쇄형 커피</a>
+                          <ul>
+                            <li>
+                              <a href="#">드립백</a>
+                            </li>
+                            <li>
+                              <a href="#">소풍커피</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">파우치 커피</a>
+                          <ul>
+                            <li>
+                              <a href="#"
+                                ><span class="s_color">NEW</span> 파우치커피</a
+                              >
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">캡슐 커피</a>
+                          <ul>
+                            <li>
+                              <a href="#"
+                                ><span class="s_color">NEW</span> 네스프레소
+                                호환용</a
+                              >
+                            </li>
+                            <li>
+                              <a href="#">CBTL 호환용</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">원두</a>
+                          <ul>
+                            <li>
+                              <a href="#"
+                                ><span class="s_color">MD's PICK</span></a
+                              >
+                            </li>
+                            <li>
+                              <a href="#">원두 가이드</a>
+                            </li>
+                            <li>
+                              <a href="#">라이트 로스트</a>
+                            </li>
+                            <li>
+                              <a href="#">미디엄 로스트</a>
+                            </li>
+                            <li>
+                              <a href="#">다크 로스트</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">티</a>
+                          <ul>
+                            <li>
+                              <a href="#">티 가이드</a>
+                            </li>
+                            <li>
+                              <a href="#">클래식 티</a>
+                            </li>
+                            <li>
+                              <a href="#">프룻티</a>
+                            </li>
+                            <li>
+                              <a href="#">허브티</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">상품</a>
+                          <ul>
+                            <li>
+                              <a href="#">스틱커피</a>
+                            </li>
+                            <li>
+                              <a href="#">텀블러</a>
+                            </li>
+                            <li>
+                              <a href="#">머그</a>
+                            </li>
+                            <li>
+                              <a href="#">파우더</a>
+                            </li>
+                            <li>
+                              <a href="#">푸드</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">CBTL시스템</a>
+                          <ul>
+                            <li>
+                              <a href="#">CBTL 머식</a>
+                            </li>
+                            <li>
+                              <a href="#">악세서리</a>
+                            </li>
+                          </ul>
+                        </li>
                       </ul>
-                    </div></li>
-                    <li><a href="#">MEMBER'S CLUB</a>
-                      <div class="gnb_depth gnb_depth2_2">
-                        <ul class="submenu_list">
-                          <li><a href="#">커피빈 멤버스클럽</a></li>
-                          <li><a href="#">나의 커피빈</a></li>
-                        </ul>
-                      </div></li>
-                    <li><a href="#">MENU</a>
-                      <div class="gnb_depth gnb_depth2_3">
-                        <ul class="submenu_list">
-                          <li><a href="#">음료</a></li>
-                          <li><a href="#">푸드</a></li>
-                          <li><a href="#">상품</a></li>
-                          <li><a href="#">카드</a></li>
-                        </ul>
-                      </div></li>
-                    <li><a href="#">COFFEE BEAN</a>
-                      <div class="gnb_depth gnb_depth2_4">
-                        <ul class="submenu_list">
-                          <li><a href="#">커피빈코리아</a></li>
-                          <li><a href="#">커피빈소식</a></li>
-                          <li><a href="#">매장안내</a></li>
-                          <li><a href="#">사회공헌</a></li>
-                          <li><a href="#">채용안내</a></li>
-                          <li><a href="#">신규입점제의</a></li>
-                        </ul>
-                      </div></li>
-                    <li><a href="#">CBTL</a>
-                      <div class="gnb_depth gnb_depth2_5">
-                        <ul class="submenu_list">
-                          <li><a href="#">CBTL 가이드</a></li>
-                          <li><a href="#">CBTL 서비스</a></li>
-                          <li><a href="#">CBTL FAQ</a></li>
-                          <li><a href="#">AS 안내</a></li>
-                          <li><a href="#">AS 신청</a></li>
-                          <li><a href="#">제품설명서</a></li>
-                        </ul>
-                      </div></li>
-                    <li>
-                      <button class="search_btn">
-                        <img src="images/coffeebin_image17.png" alt="" />
-                      </button>
-                    </li>
-                  </ul>
-                </div>
+                    </div>
+                  </li>
+                  <!-- // gnb1 -->
+                  <li class="gnb2">
+                    <a href="#">MEMBER's CLUB</a>
+                    <div class="gnb2_1">
+                      <ul class="gnb2_2">
+                        <li>
+                          <a href="#">커피빈 멤버스 클럽</a>
+                          <ul>
+                            <li>
+                              <a href="#">멤버스 클럽</a>
+                            </li>
+                            <li>
+                              <a href="#">커피빈 카드</a>
+                            </li>
+                            <li>
+                              <a href="#">커피빈 e-Gift</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">나의 커피빈</a>
+                          <ul>
+                            <li>
+                              <a href="#">나의 커피빈 카드</a>
+                            </li>
+                            <li>
+                              <a href="#">나의 콩/e쿠폰 보기</a>
+                            </li>
+                            <li>
+                              <a href="#">커피빈 카드 등록</a>
+                            </li>
+                            <li>
+                              <a href="#">분실신고/환불신청</a>
+                            </li>
+                            <li>
+                              <a href="#">e-Gift 구매</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="gnb3">
+                    <a href="#">MENU</a>
+                    <div class="gnb2_1">
+                      <ul class="gnb2_2">
+                        <li>
+                          <a href="#">음료</a>
+                          <ul>
+                            <li>
+                              <a href="#">신음료</a>
+                            </li>
+                            <li>
+                              <a href="#">에스프레소 음료</a>
+                            </li>
+                            <li>
+                              <a href="#">브루드 커피</a>
+                            </li>
+                            <li>
+                              <a href="#">티 / 티라떼</a>
+                            </li>
+                            <li>
+                              <a href="#">아이스 블렌디드</a>
+                            </li>
+                            <li>
+                              <a href="#">커피빈 주스 (병음료)</a>
+                            </li>
+                            <li>
+                              <a href="#">기타 제조 음료</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">푸드</a>
+                          <ul>
+                            <li>
+                              <a href="#">베이커리</a>
+                            </li>
+                            <li>
+                              <a href="#">케익</a>
+                            </li>
+                            <li>
+                              <a href="#">샌드위치 &amp; 샐러드</a>
+                            </li>
+                            <li>
+                              <a href="#">기타</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">상품</a>
+                          <ul>
+                            <li>
+                              <a href="#">보온 텀블러</a>
+                            </li>
+                            <li>
+                              <a href="#">머그</a>
+                            </li>
+                            <li>
+                              <a href="#">머그커피</a>
+                            </li>
+                            <li>
+                              <a href="#">소풍커피</a>
+                            </li>
+                            <li>
+                              <a href="#">파우더</a>
+                            </li>
+                            <li>
+                              <a href="#">기타상품</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">카드</a>
+                          <ul>
+                            <li>
+                              <a href="#">e-Gift 카드</a>
+                            </li>
+                            <li>
+                              <a href="#">실물카드</a>
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="gnb4">
+                    <a href="#">THE COFFEE BEAN</a>
+                    <div class="gnb2_1">
+                      <ul class="gnb2_2">
+                        <li>
+                          <a href="#">커피빈 코리아</a>
+                          <ul>
+                            <li>
+                              <a href="#">Simply the Best</a>
+                            </li>
+                            <li>
+                              <a href="#">커피빈 커피와 티</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">커피빈 소식</a>
+                          <ul>
+                            <li>
+                              <a href="#">새소식</a>
+                            </li>
+                            <li>
+                              <a href="#">프로모션</a>
+                            </li>
+                            <li>
+                              <a href="#">공지사항</a>
+                            </li>
+                            <li>
+                              <a href="#">소셜미디어</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">매장안내</a>
+                          <ul>
+                            <li>
+                              <a href="#">매장 찾기</a>
+                            </li>
+                            <li>
+                              <a href="#">신규 매장</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">사회공헌</a>
+                        </li>
+                        <li>
+                          <a href="#">채용안내</a>
+                          <ul>
+                            <li>
+                              <a href="#">채용안내 바로가기</a>
+                            </li>
+                            <li>
+                              <a href="#">채용카테고리</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li>
+                          <a href="#">신규 입점 제의</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="gnb5">
+                    <a href="#">CBTL</a>
+                    <div class="gnb2_1">
+                      <ul class="gnb2_2">
+                        <li>
+                          <a href="#">CBTL 가이드</a>
+                        </li>
+                        <li>
+                          <a href="#">CBTL 서비스</a>
+                        </li>
+                        <li>
+                          <a href="#">AS 안내</a>
+                        </li>
+                        <li>
+                          <a href="#">AS 신청</a>
+                        </li>
+                        <li>
+                          <a href="#">CBTL FAQ</a>
+                        </li>
+                        <li>
+                          <a href="#">제품설명서</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="gnb6">
+                    <a href="#"
+                      ><img src="./images/coffeebin_image17.png" alt=""
+                    /></a>
+                  </li>
+                </ul>
               </div>
+            </div>
           </div>
+          <div class="header_line mobile">
+            <div class="inner">
+              <a href="#" class="btn_menu"
+                ><img src="./images/ham_m.png" alt="메뉴"
+              /></a>
+              <h1>
+                <a href="#" class="logo"
+                  ><img src="./images/coffeebin_image24.png" alt="로고"
+                /></a>
+              </h1>
+            </div>
           </div>
-      
+        </div>
       </header>
       <main id="main_content">
         <div class="banner">
@@ -111,88 +476,99 @@
           </a>
         </div>
         <div class="main_wrap cf">
-          <h2>MD'S PICK</h2>
-          <div class="swiper mySwiper01">
+          <div class="product_slide">
+            <h2>MD'S PICK</h2>
+            <div class="swiper mySwiper01">
               <div class="swiper-wrapper slidebox1">
-                  <div class="swiper-slide imglist1">
-                    <a href="#">
-                      <p class="pic"></p>
-                      <p class="text_box">
-                        <span class="txt1">그립스텐텀블러(소프트퍼플)</span><span class="ml">540ml</span>
-                        <span class="txt2">23,000원</span></p>
-                    </a>
-                  </div>
-                  <div class="swiper-slide imglist1">
-                    <a href="#">
-                      <p class="pic02"></p>
-                      <p class="text_box">
-                        <span class="txt1">앵글스텐텀블러</span><span class="ml">500ml</span>
-                        <span class="txt2">16,000원</span></p>
-                    </a>
-                  </div>
-                  <div class="swiper-slide imglist1">
-                    <a href="#">
-                      <p class="pic03"></p>
-                      <p class="text_box">
-                        <span class="txt1">그립 더블월 빅 글라스(오로라)</span><span class="ml">550ml</span>
-                        <span class="txt2">14,000원</span>
-                      </p>
-                    </a>
-                  </div>
-                  <div class="swiper-slide imglist1">
-                    <a href="#">
-                      <p class="pic04"></p>
-                      <p class="text_box">
-                        <span class="txt1">워터드롭 더블 월 글라스(오로라)</span>
-                        <span class="ml">470ml</span>
-                        <span class="txt2">11,000원</span>
-                      </p>
-                    </a>
-                  </div>
-                  <div class="swiper-slide imglist1">
-                    <a href="#">
-                      <p class="pic05"></p>
-                      <p class="text_box">
-                        <span class="txt1">커피빈x나인웨어 피크닉세트</span><span class="ml">(2인)</span>
-                        <span class="txt2">35,000원</span>
-                      </p>
-                    </a>
-                  </div>
-                  <div class="swiper-slide imglist1">
-                    <a href="#">
-                      <p class="pic06"></p>
-                      <p class="text_box">
-                        <span class="txt1">웨이브글라스머그(오로라)</span><span class="ml">450ml</span>
-                        <span class="txt2">15,000원</span>
-                      </p>
-                    </a>
-                  </div>
-                  <div class="swiper-slide imglist1">
-                    <a href="#">
-                      <p class="pic07"></p>
-                      <p class="text_box">
-                        <span class="txt1">미르텀블러(라벤더퍼플)</span><span class="ml">16oz</span>
-                        <span class="txt2">35,000원</span>
-                      </p>
-                    </a>
-                  </div>
-                  <div class="swiper-slide imglist1">
-                    <a href="#">
-                      <p class="pic08"></p>
-                      <p class="text_box">
-                        <span class="txt1">미르캠프컵(라벤더퍼플)</span><span class="ml">20oz</span>
-                        <span class="txt2">37,000원</span>
-                      </p>
-                    </a>
-                  </div>    
-            </div>
-       
+                <div class="swiper-slide imglist1">
+                  <a href="#">
+                    <p class="pic"></p>
+                    <p class="text_box">
+                      <span class="txt1">그립스텐텀블러(소프트퍼플)</span
+                      ><span class="ml">540ml</span>
+                      <span class="txt2">23,000원</span>
+                    </p>
+                  </a>
+                </div>
+                <div class="swiper-slide imglist1">
+                  <a href="#">
+                    <p class="pic02"></p>
+                    <p class="text_box">
+                      <span class="txt1">앵글스텐텀블러</span
+                      ><span class="ml">500ml</span>
+                      <span class="txt2">16,000원</span>
+                    </p>
+                  </a>
+                </div>
+                <div class="swiper-slide imglist1">
+                  <a href="#">
+                    <p class="pic03"></p>
+                    <p class="text_box">
+                      <span class="txt1">그립 더블월 빅 글라스(오로라)</span
+                      ><span class="ml">550ml</span>
+                      <span class="txt2">14,000원</span>
+                    </p>
+                  </a>
+                </div>
+                <div class="swiper-slide imglist1">
+                  <a href="#">
+                    <p class="pic04"></p>
+                    <p class="text_box">
+                      <span class="txt1">워터드롭 더블 월 글라스(오로라)</span>
+                      <span class="ml">470ml</span>
+                      <span class="txt2">11,000원</span>
+                    </p>
+                  </a>
+                </div>
+                <div class="swiper-slide imglist1">
+                  <a href="#">
+                    <p class="pic05"></p>
+                    <p class="text_box">
+                      <span class="txt1">커피빈x나인웨어 피크닉세트</span
+                      ><span class="ml">(2인)</span>
+                      <span class="txt2">35,000원</span>
+                    </p>
+                  </a>
+                </div>
+                <div class="swiper-slide imglist1">
+                  <a href="#">
+                    <p class="pic06"></p>
+                    <p class="text_box">
+                      <span class="txt1">웨이브글라스머그(오로라)</span
+                      ><span class="ml">450ml</span>
+                      <span class="txt2">15,000원</span>
+                    </p>
+                  </a>
+                </div>
+                <div class="swiper-slide imglist1">
+                  <a href="#">
+                    <p class="pic07"></p>
+                    <p class="text_box">
+                      <span class="txt1">미르텀블러(라벤더퍼플)</span
+                      ><span class="ml">16oz</span>
+                      <span class="txt2">35,000원</span>
+                    </p>
+                  </a>
+                </div>
+                <div class="swiper-slide imglist1">
+                  <a href="#">
+                    <p class="pic08"></p>
+                    <p class="text_box">
+                      <span class="txt1">미르캠프컵(라벤더퍼플)</span
+                      ><span class="ml">20oz</span>
+                      <span class="txt2">37,000원</span>
+                    </p>
+                  </a>
+                </div>
+              </div>
               <div class="swiper-pagination"></div>
+            </div>
           </div>
-          
-          <h2>What's NEW</h2>
-          <div class="swiper mySwiper02">
-            <div class="swiper-wrapper slidebox2">  
+
+          <div class="product_slide2">
+            <h2>What's NEW</h2>
+            <div class="swiper mySwiper02">
+              <div class="swiper-wrapper slidebox2">
                 <div class="swiper-slide imglist2">
                   <a href="#">
                     <p class="pic"></p>
@@ -213,7 +589,10 @@
                   <a href="#">
                     <p class="pic3"></p>
                     <p class="text_box2">
-                      <span class="txt3">2022 08 Plain Butter Scone & Cranberry Cream Cheese Scone</span>
+                      <span class="txt3"
+                        >2022 08 Plain Butter Scone & Cranberry Cream Cheese
+                        Scone</span
+                      >
                     </p>
                   </a>
                 </div>
@@ -221,7 +600,10 @@
                   <a href="#">
                     <p class="pic4"></p>
                     <p class="text_box2">
-                      <span class="txt3">2022 08 Black Olive Potato Bagel & Olive Basil Bagel</span>
+                      <span class="txt3"
+                        >2022 08 Black Olive Potato Bagel & Olive Basil
+                        Bagel</span
+                      >
                     </p>
                   </a>
                 </div>
@@ -229,7 +611,9 @@
                   <a href="#">
                     <p class="pic5"></p>
                     <p class="text_box2">
-                      <span class="txt3">2022 07 Maldon - Salted Butter Rolls</span>
+                      <span class="txt3"
+                        >2022 07 Maldon - Salted Butter Rolls</span
+                      >
                     </p>
                   </a>
                 </div>
@@ -253,7 +637,9 @@
                   <a href="#">
                     <p class="pic8"></p>
                     <p class="text_box2">
-                      <span class="txt3">2022 06 Bacon Scallion Cream Cheese Bagel</span>
+                      <span class="txt3"
+                        >2022 06 Bacon Scallion Cream Cheese Bagel</span
+                      >
                     </p>
                   </a>
                 </div>
@@ -261,7 +647,9 @@
                   <a href="#">
                     <p class="pic9"></p>
                     <p class="text_box2">
-                      <span class="txt3">2022 06 What a Sweet Color Purple</span>
+                      <span class="txt3"
+                        >2022 06 What a Sweet Color Purple</span
+                      >
                     </p>
                   </a>
                 </div>
@@ -269,7 +657,9 @@
                   <a href="#">
                     <p class="pic10"></p>
                     <p class="text_box2">
-                      <span class="txt3">2022 06 What a Sweet Color Purple</span>
+                      <span class="txt3"
+                        >2022 06 What a Sweet Color Purple</span
+                      >
                     </p>
                   </a>
                 </div>
@@ -285,7 +675,9 @@
                   <a href="#">
                     <p class="pic12"></p>
                     <p class="text_box2">
-                      <span class="txt3">2022 06 My Pleasure In Ordinary Days</span>
+                      <span class="txt3"
+                        >2022 06 My Pleasure In Ordinary Days</span
+                      >
                     </p>
                   </a>
                 </div>
@@ -293,7 +685,9 @@
                   <a href="#">
                     <p class="pic13"></p>
                     <p class="text_box2">
-                      <span class="txt3">2022 06 My Pleasure In Ordinary Days</span>
+                      <span class="txt3"
+                        >2022 06 My Pleasure In Ordinary Days</span
+                      >
                     </p>
                   </a>
                 </div>
@@ -301,7 +695,10 @@
                   <a href="#">
                     <p class="pic14"></p>
                     <p class="text_box2">
-                      <span class="txt3">2022 05 Fresh Milk Honey Cake & White Cheese Mousse Cake</span>
+                      <span class="txt3"
+                        >2022 05 Fresh Milk Honey Cake & White Cheese Mousse
+                        Cake</span
+                      >
                     </p>
                   </a>
                 </div>
@@ -315,26 +712,28 @@
                 </div>
               </div>
               <div class="swiper-pagination"></div>
-
+            </div>
           </div>
         </div>
         <div class="promotion">
-          <h2>#커피빈코리아 #커피빈맛있다 #커빈사랑해</h2>
-          <ul class="pro_insta">
-            <li class="pro_pic"><a href="#"></a></li>
-            <li class="pro_pic"><a href="#"></a></li>
-            <li class="pro_pic"><a href="#"></a></li>
-            <li class="pro_pic"><a href="#"></a></li>
-            <li class="pro_pic"><a href="#"></a></li>
-            <li class="pro_pic"><a href="#"></a></li>
-            <li class="pro_pic"><a href="#"></a></li>
-            <li class="pro_pic"><a href="#"></a></li>
-            <li class="pro_pic"><a href="#"></a></li>
-            <li class="pro_pic"><a href="#"></a></li>
-            <li class="pro_pic"><a href="#"></a></li>
-            <li class="pro_pic"><a href="#"></a></li>
-          </ul>
-          <a class="btn1" href="#">OUR INSTAGRAM - @COFFEEBEAMN_KR</a>
+          <div class="inner">
+            <h2>#커피빈코리아 #커피빈맛있다 #커빈사랑해</h2>
+            <ul class="pro_insta">
+              <li class="pro_pic"><a href="#"></a></li>
+              <li class="pro_pic"><a href="#"></a></li>
+              <li class="pro_pic"><a href="#"></a></li>
+              <li class="pro_pic"><a href="#"></a></li>
+              <li class="pro_pic"><a href="#"></a></li>
+              <li class="pro_pic"><a href="#"></a></li>
+              <li class="pro_pic"><a href="#"></a></li>
+              <li class="pro_pic"><a href="#"></a></li>
+              <li class="pro_pic"><a href="#"></a></li>
+              <li class="pro_pic"><a href="#"></a></li>
+              <li class="pro_pic"><a href="#"></a></li>
+              <li class="pro_pic"><a href="#"></a></li>
+            </ul>
+            <a href="#" class="btn1">OUR INSTAGRAM - @COFFEEBEAMN_KR</a>
+          </div>
         </div>
       </main>
       <footer id="footer">
@@ -358,26 +757,29 @@
               <a href="#">위치기반서비스 이용약관</a>
             </div>
             <div class="f_address">
-              <span>(주)커피빈코리아 대표이사 감종철 ㅣ 사업자등록번호 120-86-07029
-                ㅣ 통신판매업신고 제 2010-서울강남-00560</span>
-              <span>서울시 강남구 봉은사로 99길 7 ㅣ 고객센터 02-1577-4708 (09:00 -
-                18:00) ㅣE-mail : cbk@coffeebeankorea.com</span>
-              <span> <br/>ⓒ 2021. The Coffee Bean. All rights reserved.</span> 
+              <span
+                >(주)커피빈코리아 대표이사 감종철 ㅣ 사업자등록번호 120-86-07029
+                ㅣ 통신판매업신고 제 2010-서울강남-00560</span
+              >
+              <span
+                >서울시 강남구 봉은사로 99길 7 ㅣ 고객센터 02-1577-4708 (09:00 -
+                18:00) ㅣE-mail : cbk@coffeebeankorea.com</span
+              >
+              <span> <br />ⓒ 2021. The Coffee Bean. All rights reserved.</span>
             </div>
           </div>
         </div>
       </footer>
     </div>
 
-     <p class="back_to_top">
-      <a href="#wrap" class="s_point">
-        <span>TOP</span></a>
-      </p>
-
-    <script src="js/topbtn.js"></script>
-
+    <p class="back_to_top">
+      <a href="#wrap" class="s_point"> <span>TOP</span></a>
+    </p>
+    <!-- script -->
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-   <script src="js/custom.js"></script>
-
+    <script src="js/custom.js"></script>
+    <script src="js/topbtn.js"></script>
   </body>
 </html>

@@ -10,8 +10,8 @@ html {
   overflow-y: scroll;
 }
 #wrap {
-	margin: auto;
-  margin-top: 140px;
+  margin: auto;
+
   width: 100%;
 }
 div {
@@ -36,19 +36,15 @@ ul,
 li {
   list-style: none;
 }
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 
 /* font reset */
 html {
   font-size: 100%;
-} /*16px*/
+}
 
 body {
   background: white;
-  font-family: "Noto Sans", "Roboto" , sans-serif;
+  font-family: "Noto Sans", "Roboto", sans-serif;
   font-weight: 400;
   line-height: 1.75;
   color: #000000;
@@ -222,4 +218,7 @@ q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+.s_color {
+  color: #f57317;
 }
